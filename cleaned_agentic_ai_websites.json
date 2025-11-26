@@ -1,0 +1,42 @@
+[
+  {
+    "benchmark": "WebArena",
+    "website": "http://www.phontron.com"
+  },
+  {
+    "benchmark": "WebArena",
+    "website": "https://amazonaws.com"
+  },
+  {
+    "benchmark": "WebArena",
+    "website": "https://docs.google.com"
+  },
+  {
+    "benchmark": "WebArena",
+    "website": "https://the-agent-company.com"
+  },
+  {
+    "benchmark": "WebArena",
+    "website": "https://yonatanbisk.com"
+  },
+  {
+    "benchmark": "WebArena",
+    "website": "https://dpfried.github.io"
+  },
+  {
+    "benchmark": "WebShop",
+    "website": "https://arxiv.org"
+  },
+  {
+    "benchmark": "WebShop",
+    "website": "https://princeton-nlp.github.io"
+  },
+  {
+    "benchmark": "WebShop",
+    "website": "https://john-b-yang.github.io"
+  },
+  {
+    "benchmark": "WebShop",
+    "website": "https://howard50b.github.io"
+  }
+]

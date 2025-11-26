@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+venv
+crawled_data
+config_backups
+agentic_ai_crawled
+logs
+python_docs_directory
+tests
+*.csv

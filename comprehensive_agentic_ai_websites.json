@@ -1,0 +1,142 @@
+[
+  {
+    "benchmark": "WebArena",
+    "website": "https://www.google.com",
+    "name": "Google"
+  },
+  {
+    "benchmark": "WebArena",
+    "website": "https://www.facebook.com",
+    "name": "Facebook"
+  },
+  {
+    "benchmark": "WebArena",
+    "website": "https://www.reddit.com",
+    "name": "Reddit"
+  },
+  {
+    "benchmark": "WebArena",
+    "website": "https://www.wikipedia.org",
+    "name": "Wikipedia Org"
+  },
+  {
+    "benchmark": "WebArena",
+    "website": "https://www.amazon.com",
+    "name": "Amazon"
+  },
+  {
+    "benchmark": "WebArena",
+    "website": "https://www.netflix.com",
+    "name": "Netflix"
+  },
+  {
+    "benchmark": "WebArena",
+    "website": "https://www.instagram.com",
+    "name": "Instagram"
+  },
+  {
+    "benchmark": "WebArena",
+    "website": "https://www.youtube.com",
+    "name": "Youtube"
+  },
+  {
+    "benchmark": "WebArena",
+    "website": "https://www.linkedin.com",
+    "name": "Linkedin"
+  },
+  {
+    "benchmark": "WebArena",
+    "website": "https://www.twitter.com",
+    "name": "Twitter"
+  },
+  {
+    "benchmark": "AgentBench",
+    "website": "https://www.hotels.com",
+    "name": "Hotels"
+  },
+  {
+    "benchmark": "AgentBench",
+    "website": "https://www.expedia.com",
+    "name": "Expedia"
+  },
+  {
+    "benchmark": "AgentBench",
+    "website": "https://www.booking.com",
+    "name": "Booking"
+  },
+  {
+    "benchmark": "AgentBench",
+    "website": "https://www.airbnb.com",
+    "name": "Airbnb"
+  },
+  {
+    "benchmark": "AgentBench",
+    "website": "https://www.agoda.com",
+    "name": "Agoda"
+  },
+  {
+    "benchmark": "WebShop",
+    "website": "https://www.bestbuy.com",
+    "name": "Bestbuy"
+  },
+  {
+    "benchmark": "WebShop",
+    "website": "https://www.newegg.com",
+    "name": "Newegg"
+  },
+  {
+    "benchmark": "WebShop",
+    "website": "https://www.walmart.com",
+    "name": "Walmart"
+  },
+  {
+    "benchmark": "AgentBench GitHub",
+    "website": "https://github.githubassets.com",
+    "name": "Github Githubassets Com"
+  },
+  {
+    "benchmark": "AgentBench GitHub",
+    "website": "https://github-cloud.s3.amazonaws.com",
+    "name": "Github-Cloud S3 Amazonaws Com"
+  },
+  {
+    "benchmark": "WebVoyager Paper",
+    "website": "https://arxiv.org/abs/2401.13649",
+    "name": "Arxiv Org"
+  },
+  {
+    "benchmark": "WebVoyager Paper",
+    "website": "https://arxiv.org/abs/2401.13649v2",
+    "name": "Arxiv Org"
+  },
+  {
+    "benchmark": "WebVoyager Paper",
+    "website": "https://jykoh.com/vwa.",
+    "name": "Jykoh Com"
+  },
+  {
+    "benchmark": "GAIA Benchmark",
+    "website": "https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/gaia-benchmark/GAIA.png",
+    "name": "Cdn-Thumbnails Huggingface Co"
+  },
+  {
+    "benchmark": "GAIA Benchmark",
+    "website": "https://huggingface.co/datasets/gaia-benchmark/GAIA",
+    "name": "Huggingface Co"
+  },
+  {
+    "benchmark": "AssistantBench",
+    "website": "https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL",
+    "name": "Www Googletagmanager Com"
+  },
+  {
+    "benchmark": "AssistantBench",
+    "website": "https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro",
+    "name": "Fonts Googleapis Com"
+  },
+  {
+    "benchmark": "AssistantBench",
+    "website": "https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css",
+    "name": "Cdn Jsdelivr Net"
+  }
+]

@@ -1,0 +1,499 @@
+# ============================================================================
+# WEB CRAWLER CONFIGURATION FILE
+# ============================================================================
+# This file controls all aspects of the web crawler behavior.
+# All settings are optional - sensible defaults are used if not specified.
+# 
+# IMPORTANT: After editing this file, just run: python -m src.main
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# INPUT FILE
+# ----------------------------------------------------------------------------
+# Path to the CSV file containing the list of websites to crawl.
+# The CSV should have a column with website URLs (default column name: 'website').
+# 
+# Example: If your CSV is at /path/to/my_websites.csv, set this to:
+#   csv_file: /path/to/my_websites.csv
+# 
+# You can also specify the CSV file directly when running:
+#   python -m src.main my_websites.csv
+#   (This overrides the csv_file setting below)
+# ----------------------------------------------------------------------------
+csv_file: test_pulkit.csv
+
+# ----------------------------------------------------------------------------
+# PERFORMANCE SETTINGS
+# ----------------------------------------------------------------------------
+performance:
+  # Number of CPU cores to use for parallel crawling.
+  # 
+  # - Set to null (or don't specify) to use ALL available CPU cores automatically
+  # - Set to a number (e.g., 4, 8, 16) to limit to that many cores
+  # - More cores = faster crawling, but uses more system resources
+  # 
+  # Example: cpus: 8  (uses 8 cores)
+  # Example: cpus: null  (uses all available cores - recommended for servers)
+  # 
+  # IMPORTANT: For single-domain crawling, set this to match or be LESS than
+  # max_requests_per_domain_per_minute to avoid rate limiting.
+  # Example: If rate limit is 30/min, use 20-25 workers max.
+  cpus: 20
+
+  # Maximum number of pages to crawl per website.
+  # 
+  # WHAT THIS DOES:
+  # - This is a SAFETY LIMIT to prevent accidentally crawling huge websites
+  # - Currently NOT used in recursive directory discovery (discovers all directories)
+  # - May be used as a safety check in other parts of the crawler
+  # 
+  # RECOMMENDED VALUES:
+  # - Small sites: 100-500
+  # - Medium sites: 1000-5000
+  # - Large sites: 10000+ (or set very high like 50000)
+  # - Set to 100000+ if you want no practical limit
+  # 
+  # IMPORTANT: Directory discovery will find ALL directories, then limit for Phase 2.
+  # Set to 20 to test with 20 parallel workers in Phase 2.
+  max_pages_per_website: 20
+
+  # How long to wait (in seconds) after a page loads before taking screenshot.
+  # 
+  # WHAT THIS DOES:
+  # - After navigating to a page, the crawler waits this many seconds
+  # - This allows JavaScript to finish loading, popups to appear, etc.
+  # - Then it takes the screenshot and saves HTML
+  # 
+  # RECOMMENDED VALUES:
+  # - Fast sites: 1-2 seconds
+  # - Normal sites: 2-3 seconds
+  # - Slow/heavy sites: 3-5 seconds
+  # - Sites with lots of popups: 3-4 seconds
+  # 
+  # Too short = may miss content that loads slowly
+  # Too long = wastes time waiting unnecessarily
+  wait_after_load: 2
+
+  # Maximum number of retry attempts if a page fails to load.
+  # 
+  # WHAT THIS DOES:
+  # - If a page fails to load (network error, timeout, etc.), retry this many times
+  # - After max_retries failures, the page is marked as failed and crawler continues
+  # 
+  # RECOMMENDED VALUES:
+  # - Stable networks: 2-3 retries
+  # - Unstable networks: 3-5 retries
+  # - Very unreliable: 5+ retries
+  # 
+  # More retries = more resilient but slower if many pages fail
+  max_retries: 3
+
+  # Maximum depth for directory discovery recursion.
+  # 
+  # WHAT THIS DOES:
+  # - Limits how deep the discovery will recursively explore directories
+  # - Depth is calculated relative to the base URL
+  # - Set to a very high number (like 100) to explore all nested directories
+  # 
+  # RECOMMENDED VALUES:
+  # - Most sites: 10-20 is sufficient
+  # - Deep nested sites: 50-100
+  # - Set to 100+ to explore all directories (no practical limit)
+  # 
+  # IMPORTANT: Set this to a very high number to discover all directories
+  max_discovery_depth: 100
+
+# ----------------------------------------------------------------------------
+# TIMEOUT SETTINGS (all values in seconds)
+# ----------------------------------------------------------------------------
+timeouts:
+  # How long to wait for a page to fully load before giving up.
+  # 
+  # WHAT THIS DOES:
+  # - When navigating to a URL, wait up to this many seconds for the page to load
+  # - If page doesn't load in time, it's considered a timeout error
+  # - The page load is considered complete when DOM is ready
+  # 
+  # RECOMMENDED VALUES:
+  # - Fast sites: 20-30 seconds
+  # - Normal sites: 30-45 seconds
+  # - Slow sites: 60-90 seconds
+  # - Very slow/heavy sites: 90-120 seconds
+  # 
+  # Too short = many false timeout errors
+  # Too long = wastes time waiting for broken pages
+  page_load: 30
+
+  # How long to wait for network requests to complete.
+  # 
+  # WHAT THIS DOES:
+  # - Maximum time to wait for any network request (images, CSS, JS, etc.)
+  # - If a resource takes longer, it's skipped
+  # 
+  # RECOMMENDED VALUES:
+  # - Fast connections: 5-10 seconds
+  # - Normal connections: 10-15 seconds
+  # - Slow connections: 15-30 seconds
+  # 
+  # Note: This is separate from page_load timeout
+  network: 10
+
+  # How long to wait for specific page elements to appear.
+  # 
+  # WHAT THIS DOES:
+  # - When looking for specific elements (buttons, popups, etc.), wait this long
+  # - Used by popup handler and other element detection
+  # 
+  # RECOMMENDED VALUES:
+  # - Most cases: 3-5 seconds is sufficient
+  # - Slow sites: 5-10 seconds
+  # 
+  # This is usually fine at default (5 seconds)
+  element_wait: 5
+
+# ----------------------------------------------------------------------------
+# BROWSER SETTINGS
+# ----------------------------------------------------------------------------
+browser:
+  # Whether to run the browser in headless mode (no visible window).
+  # 
+  # WHAT THIS DOES:
+  # - true = Browser runs in background, no window visible (faster, uses less resources)
+  # - false = Browser window is visible (useful for debugging, seeing what's happening)
+  # 
+  # RECOMMENDED:
+  # - Production/automated: true (headless)
+  # - Debugging/testing: false (visible)
+  # 
+  # Headless is faster and uses less resources, but you can't see what's happening
+  headless: true
+
+  # Whether to enable the stealth plugin (playwright-stealth).
+  # 
+  # WHAT THIS DOES:
+  # - true = Apply stealth plugin to hide automation fingerprints
+  # - false = Don't use stealth plugin (may work better with some sites)
+  # 
+  # RECOMMENDED:
+  # - If getting blocked frequently, try setting to false
+  # - Some sites detect stealth plugins and block them
+  # - Default: false (disabled) - stealth can cause blocking issues
+  enable_stealth: false
+
+  # Browser window/viewport size (in pixels).
+  # 
+  # WHAT THIS DOES:
+  # - Sets the size of the browser window/viewport
+  # - Screenshots will be this size (or full page if full_page: true)
+  # - Some websites show different content based on screen size
+  # 
+  # RECOMMENDED VALUES:
+  # - Desktop: 1920x1080 (Full HD) or 1366x768 (common laptop)
+  # - Tablet: 1024x768
+  # - Mobile: 375x667 (iPhone size)
+  # 
+  # Use larger sizes for desktop sites, smaller for mobile-responsive testing
+  viewport:
+    width: 1920
+    height: 1080
+
+  # Additional command-line arguments passed to the Chromium browser.
+  # 
+  # WHAT THIS DOES:
+  # - These are flags passed to the browser when it starts
+  # - They control browser behavior, security, performance, etc.
+  # 
+  # RECOMMENDED:
+  # - Don't modify unless you know what you're doing
+  # - These defaults are optimized for server/automated environments
+  # - Removing --no-sandbox may cause issues in some environments
+  # 
+  # Common additions you might want:
+  #   - '--disable-images'  # Don't load images (faster, but screenshots won't show images)
+  #   - '--disable-javascript'  # Disable JS (faster, but many sites won't work)
+  args:
+    - --no-sandbox
+    - --disable-setuid-sandbox
+    - --disable-dev-shm-usage
+    - --disable-accelerated-2d-canvas
+    - --no-first-run
+    - --no-zygote
+    - --single-process
+    - --disable-gpu
+
+# ----------------------------------------------------------------------------
+# SCREENSHOT SETTINGS
+# ----------------------------------------------------------------------------
+screenshot:
+  # Whether to capture the full page (including parts below the fold).
+  # 
+  # WHAT THIS DOES:
+  # - true = Capture entire page, even parts you need to scroll to see
+  # - false = Only capture what's visible in the viewport (faster, smaller files)
+  # 
+  # RECOMMENDED:
+  # - Most cases: true (capture full page)
+  # - If you only care about above-the-fold content: false
+  # 
+  # Full page screenshots are larger files but show complete content
+  full_page: true
+
+  # Screenshot dimensions (in pixels).
+  # 
+  # WHAT THIS DOES:
+  # - If full_page is false, screenshots will be exactly this size
+  # - If full_page is true, width is used but height extends to page length
+  # 
+  # RECOMMENDED:
+  # - Match your viewport size (see browser.viewport above)
+  # - Common: 1920x1080 for desktop, 1366x768 for laptops
+  # 
+  # Note: These should match browser viewport for consistency
+  width: 1920
+  height: 1080
+
+# ----------------------------------------------------------------------------
+# OUTPUT SETTINGS
+# ----------------------------------------------------------------------------
+output:
+  # Base directory where all crawled data is saved.
+  # 
+  # WHAT THIS DOES:
+  # - All crawled data (screenshots, HTML) goes under this directory
+  # - Structure: base_dir/website_name/screenshots/ and base_dir/website_name/html/
+  # 
+  # RECOMMENDED:
+  # - Use a descriptive name like 'crawled_data' or 'scraped_content'
+  # - Can use absolute paths: /home/user/crawled_data
+  # - Can use relative paths: crawled_data (relative to where you run the command)
+  # 
+  # Example output structure:
+  #   crawled_data/
+  #     example.com/
+  #       screenshots/
+  #         page1.png
+  #       html/
+  #         page1.html
+  base_dir: crawled_data
+
+  # Subdirectory name for screenshots (under base_dir/website_name/).
+  # 
+  # WHAT THIS DOES:
+  # - Screenshots are saved to: base_dir/website_name/screenshot_dir/
+  # 
+  # RECOMMENDED:
+  # - Keep default 'screenshots' unless you have a specific reason to change
+  screenshot_dir: screenshots
+
+  # Subdirectory name for HTML files (under base_dir/website_name/).
+  # 
+  # WHAT THIS DOES:
+  # - HTML files are saved to: base_dir/website_name/html_dir/
+  # 
+  # RECOMMENDED:
+  # - Keep default 'html' unless you have a specific reason to change
+  html_dir: html
+
+# ----------------------------------------------------------------------------
+# CSV SETTINGS
+# ----------------------------------------------------------------------------
+csv:
+  # Character used to separate columns in the CSV file.
+  # 
+  # WHAT THIS DOES:
+  # - Most CSVs use comma (',') as delimiter
+  # - Some use semicolon (';') especially in European locales
+  # - Tab-separated files use '\t'
+  # 
+  # RECOMMENDED:
+  # - Standard CSV: ',' (comma)
+  # - European CSV: ';' (semicolon)
+  # - TSV files: '\t' (tab)
+  delimiter: ','
+
+  # Name of the column in CSV that contains website URLs.
+  # 
+  # WHAT THIS DOES:
+  # - The crawler looks for this column name in your CSV file
+  # - Reads URLs from this column
+  # 
+  # RECOMMENDED:
+  # - Use 'website' or 'url' as column name
+  # - Make sure your CSV has a header row with this column name
+  # 
+  # Example CSV:
+  #   website,name,category
+  #   https://example.com,Example Site,Demo
+  website_column: website
+
+  # Character encoding of the CSV file.
+  # 
+  # WHAT THIS DOES:
+  # - Tells Python how to read the CSV file
+  # - UTF-8 works for most files (supports all languages)
+  # 
+  # RECOMMENDED:
+  # - Modern files: 'utf-8' (handles all languages)
+  # - Old Windows files: 'latin-1' or 'cp1252'
+  # 
+  # If you get encoding errors, try 'latin-1' or 'utf-8-sig'
+  encoding: utf-8
+
+# ----------------------------------------------------------------------------
+# RATE LIMITING SETTINGS
+# ----------------------------------------------------------------------------
+rate_limiting:
+  # Minimum delay (in seconds) between page requests.
+  # 
+  # WHAT THIS DOES:
+  # - Adds a random delay between min and max before each page request
+  # - Helps avoid being flagged as a bot by making requests less frequent
+  # 
+  # RECOMMENDED VALUES:
+  # - Conservative: 3-5 seconds (slower but safer)
+  # - Balanced: 2-4 seconds (good default)
+  # - Aggressive: 1-2 seconds (faster but higher risk)
+  # 
+  # Too short = may trigger rate limits
+  # Too long = unnecessarily slow crawling
+  delay_between_pages_min: 2.0
+
+  # Maximum delay (in seconds) between page requests.
+  # 
+  # WHAT THIS DOES:
+  # - Maximum random delay between page requests
+  # - Actual delay will be random between min and max
+  # 
+  # RECOMMENDED VALUES:
+  # - Should be 1-3 seconds more than min_delay
+  # - Example: if min=2.0, max=5.0 is good
+  delay_between_pages_max: 5.0
+
+  # Maximum number of requests allowed per domain per minute.
+  # 
+  # WHAT THIS DOES:
+  # - Enforces a hard limit on requests per domain
+  # - If limit is reached, crawler waits until next minute
+  # - Prevents overwhelming target servers
+  # 
+  # RECOMMENDED VALUES:
+  # - Conservative: 15-20 requests/minute (for Cloudflare-protected sites)
+  # - Normal: 20-30 requests/minute
+  # - Aggressive: 30-40 requests/minute (may trigger blocks)
+  # 
+  # IMPORTANT: This should be HIGHER than the number of parallel workers (cpus)
+  # to allow workers to make multiple requests. If you have 20 workers and
+  # set this to 20, workers will constantly wait for rate limits.
+  # 
+  # Too high = may trigger rate limits or get blocked
+  # Too low = unnecessarily slow crawling, workers constantly waiting
+  max_requests_per_domain_per_minute: 25
+
+# ----------------------------------------------------------------------------
+# HUMAN BEHAVIOR SIMULATION SETTINGS
+# ----------------------------------------------------------------------------
+human_behavior:
+  # Whether to simulate mouse movements on pages.
+  # 
+  # WHAT THIS DOES:
+  # - Moves mouse cursor in natural-looking patterns
+  # - Helps make browser behavior look more human-like
+  # 
+  # RECOMMENDED:
+  # - true = Better anti-detection (recommended)
+  # - false = Faster, but more bot-like
+  enable_mouse_movements: true
+
+  # Whether to simulate realistic scrolling behavior.
+  # 
+  # WHAT THIS DOES:
+  # - Scrolls pages in variable-speed, natural patterns
+  # - Includes pauses between scroll steps (simulates reading)
+  # - Sometimes scrolls back up (human behavior)
+  # 
+  # RECOMMENDED:
+  # - true = Better anti-detection (recommended)
+  # - false = Faster, but more bot-like
+  enable_scrolling_simulation: true
+
+  # Minimum delay (in seconds) between scroll steps.
+  # 
+  # WHAT THIS DOES:
+  # - Controls how fast scrolling happens
+  # - Lower = faster scrolling, higher = slower (more human-like)
+  # 
+  # RECOMMENDED VALUES:
+  # - 0.2-0.5 seconds (simulates reading time)
+  scroll_delay_min: 0.2
+
+  # Maximum delay (in seconds) between scroll steps.
+  # 
+  # WHAT THIS DOES:
+  # - Maximum pause between scroll steps
+  # - Actual delay is random between min and max
+  # 
+  # RECOMMENDED VALUES:
+  # - 0.5-1.0 seconds (simulates reading time)
+  # - Should be 0.3-0.5 seconds more than min
+  scroll_delay_max: 0.8
+
+# ----------------------------------------------------------------------------
+# LOGGING SETTINGS
+# ----------------------------------------------------------------------------
+logging:
+  # Logging verbosity level.
+  # 
+  # WHAT THIS DOES:
+  # - Controls how much detail is logged to console and log file
+  # - DEBUG = Everything (very verbose, shows all details)
+  # - INFO = Normal operation messages (recommended)
+  # - WARNING = Only warnings and errors
+  # - ERROR = Only errors
+  # 
+  # RECOMMENDED:
+  # - Normal use: INFO (good balance of information)
+  # - Debugging issues: DEBUG (see everything)
+  # - Production/quiet: WARNING (only problems)
+  # 
+  # DEBUG is very verbose but helps diagnose problems
+  level: INFO
+
+  # Path to log file (optional).
+  # 
+  # WHAT THIS DOES:
+  # - If set, all logs are also written to this file
+  # - If null/not set, logs only go to console
+  # 
+  # RECOMMENDED:
+  # - Set to a filename like 'crawler.log' to save logs
+  # - Use null if you don't need log files
+  # - Can use absolute paths: /var/log/crawler.log
+  # 
+  # Log files are useful for debugging and keeping history
+  file: zerodha_recursive_test.log
+
+# ----------------------------------------------------------------------------
+# RESULTS SETTINGS
+# ----------------------------------------------------------------------------
+results:
+  # Path to save detailed results as JSON file (optional).
+  # 
+  # WHAT THIS DOES:
+  # - If set, saves a JSON file with detailed crawl results
+  # - JSON includes: URLs crawled, success/failure status, errors, stats, etc.
+  # - If null, no JSON file is created
+  # 
+  # RECOMMENDED:
+  # - Set to a filename like 'results.json' to save results
+  # - Use null if you don't need JSON output
+  # - Useful for programmatic processing of crawl results
+  # 
+  # Example JSON structure:
+  #   {
+  #     "total_websites": 5,
+  #     "total_pages": 150,
+  #     "successful": 145,
+  #     "failed": 5,
+  #     "websites": [...]
+  #   }
+  save_json: null

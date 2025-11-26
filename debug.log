@@ -1,0 +1,12 @@
+2025-11-12 18:17:09 - web_crawler - INFO - Logging configured successfully
+2025-11-12 18:17:09 - web_crawler - DEBUG - Updating configuration from command line arguments
+2025-11-12 18:17:09 - web_crawler - INFO - Configuration updated: CPUs=1, timeout=45s, headless=True
+2025-11-12 18:17:09 - web_crawler - DEBUG - Validating configuration
+2025-11-12 18:17:09 - web_crawler - INFO - Configuration validated successfully
+2025-11-12 18:17:09 - web_crawler - INFO - Processing CSV file: victorias_secret.csv
+2025-11-12 18:17:09 - web_crawler - INFO - Starting web crawl from CSV file: victorias_secret.csv
+2025-11-12 18:17:09 - web_crawler - DEBUG - Initializing multi-process crawler
+2025-11-12 18:17:09 - web_crawler - INFO - Beginning crawling process
+2025-11-12 20:11:09 - web_crawler - INFO - Crawling process completed successfully
+2025-11-12 20:11:09 - web_crawler - DEBUG - Generating and displaying results summary
+2025-11-12 20:11:09 - web_crawler - INFO - Web crawler application completed

@@ -1,0 +1,1028 @@
+2025-11-14 03:57:26 - web_crawler - INFO - Logging configured successfully
+2025-11-14 03:57:26 - web_crawler - INFO - Configuration updated: CPUs=3, timeout=90s, headless=True
+2025-11-14 03:57:26 - web_crawler - INFO - Configuration validated successfully
+Web Crawler Configuration:
+  CPUs: 3/64
+  Output directory: crawled_data
+  Max pages per website: 1
+  Page timeout: 90s
+  Network timeout: 10s
+  Browser mode: Headless
+
+2025-11-14 03:57:26 - web_crawler - INFO - Processing CSV file: test_three_sites.csv
+2025-11-14 03:57:26 - web_crawler - INFO - Starting web crawl from CSV file: test_three_sites.csv
+Starting web crawl from: test_three_sites.csv
+--------------------------------------------------
+2025-11-14 03:57:26 - web_crawler - INFO - Beginning crawling process
+2025-11-14 03:57:26,652 - src.scraper - www.aloyoga.com - INFO - Initializing WebsiteScraper
+2025-11-14 03:57:26,653 - src.scraper - www.aloyoga.com - INFO - Popup debug mode enabled - screenshots will be saved to popup_debug_screenshots
+2025-11-14 03:57:26,653 - src.scraper - www.aloyoga.com - INFO - WebsiteScraper initialized successfully
+2025-11-14 03:57:26,653 - src.scraper - www.victoriassecret.com - INFO - Initializing WebsiteScraper
+2025-11-14 03:57:26,653 - src.scraper - www.longines.com - INFO - Initializing WebsiteScraper
+2025-11-14 03:57:26,653 - src.scraper - www.longines.com - INFO - Popup debug mode enabled - screenshots will be saved to popup_debug_screenshots
+2025-11-14 03:57:26,654 - src.scraper - www.longines.com - INFO - WebsiteScraper initialized successfully
+2025-11-14 03:57:26,654 - src.scraper - www.aloyoga.com - INFO - 🔍 PHASE 1: Starting directory discovery for https://www.aloyoga.com
+2025-11-14 03:57:26,654 - src.scraper - www.victoriassecret.com - INFO - Popup debug mode enabled - screenshots will be saved to popup_debug_screenshots
+2025-11-14 03:57:26,654 - src.scraper - www.victoriassecret.com - INFO - WebsiteScraper initialized successfully
+2025-11-14 03:57:26,654 - src.scraper - www.longines.com - INFO - 🔍 PHASE 1: Starting directory discovery for https://www.longines.com
+2025-11-14 03:57:26,654 - src.scraper - www.victoriassecret.com - INFO - 🔍 PHASE 1: Starting directory discovery for https://www.victoriassecret.com
+2025-11-14 03:57:26,942 - src.scraper - www.longines.com - INFO - 🔍 Starting directory-level page discovery from: https://www.longines.com
+2025-11-14 03:57:26,942 - src.scraper - www.longines.com - INFO - 📂 Directory discovery completed: 1 directories found
+2025-11-14 03:57:26,942 - src.scraper - www.longines.com - INFO - 🎯 Using ALL 1 discovered directories
+2025-11-14 03:57:26,943 - src.scraper - www.longines.com - INFO - 🔍 PHASE 1.5: Discovering site-specific popup patterns from 1 sample URLs
+2025-11-14 03:57:26,945 - src.scraper - www.victoriassecret.com - INFO - 🔍 Starting directory-level page discovery from: https://www.victoriassecret.com
+2025-11-14 03:57:26,945 - src.scraper - www.victoriassecret.com - INFO - 📂 Directory discovery completed: 1 directories found
+2025-11-14 03:57:26,945 - src.scraper - www.victoriassecret.com - INFO - 🎯 Using ALL 1 discovered directories
+2025-11-14 03:57:26,945 - src.scraper - www.victoriassecret.com - INFO - 🔍 PHASE 1.5: Discovering site-specific popup patterns from 1 sample URLs
+2025-11-14 03:57:26,952 - src.scraper - www.aloyoga.com - INFO - 🔍 Starting directory-level page discovery from: https://www.aloyoga.com
+2025-11-14 03:57:26,952 - src.scraper - www.aloyoga.com - INFO - 📂 Directory discovery completed: 1 directories found
+2025-11-14 03:57:26,952 - src.scraper - www.aloyoga.com - INFO - 🎯 Using ALL 1 discovered directories
+2025-11-14 03:57:26,952 - src.scraper - www.aloyoga.com - INFO - 🔍 PHASE 1.5: Discovering site-specific popup patterns from 1 sample URLs
+2025-11-14 03:57:27,257 - src.scraper - www.longines.com - INFO - 🔎 Analyzing URL 1/1: https://www.longines.com
+2025-11-14 03:57:27,257 - src.scraper - www.victoriassecret.com - INFO - 🔎 Analyzing URL 1/1: https://www.victoriassecret.com
+2025-11-14 03:57:27,261 - src.scraper - www.aloyoga.com - INFO - 🔎 Analyzing URL 1/1: https://www.aloyoga.com
+2025-11-14 03:57:27,283 - src.scraper - www.longines.com - INFO - 🌐 Navigating to https://www.longines.com...
+2025-11-14 03:57:27,284 - src.scraper - www.victoriassecret.com - INFO - 🌐 Navigating to https://www.victoriassecret.com...
+2025-11-14 03:57:27,289 - src.scraper - www.aloyoga.com - INFO - 🌐 Navigating to https://www.aloyoga.com...
+2025-11-14 03:57:28,078 - src.scraper - www.longines.com - INFO - ✅ Page loaded successfully
+2025-11-14 03:57:28,157 - src.scraper - www.victoriassecret.com - INFO - ✅ Page loaded successfully
+2025-11-14 03:57:28,174 - src.scraper - www.aloyoga.com - INFO - ✅ Page loaded successfully
+2025-11-14 03:57:39,171 - src.scraper - www.longines.com - INFO - 🔍 Starting HTML analysis for popup/cookie selectors...
+2025-11-14 03:57:39,260 - src.scraper - www.longines.com - INFO - 🎯 HTML Analysis: Discovered 1 selectors: #usercentrics-root(cookie_script)
+2025-11-14 03:57:39,260 - src.scraper - www.longines.com - INFO - 📊 HTML analysis returned 1 potential selectors
+2025-11-14 03:57:39,260 - src.scraper - www.longines.com - INFO - 🔍 Analyzing DOM for high z-index overlays on https://www.longines.com
+2025-11-14 03:57:39,296 - src.scraper - www.longines.com - INFO - 🔍 DOM Analysis Results: 1800 elements scanned, 38 potential overlays found
+2025-11-14 03:57:39,296 - src.scraper - www.longines.com - INFO - 📊 Top z-indexes found: [9999999, 99999, 1251, 1199, 1100, 1001, 1000, 1000, 1000, 1000]
+2025-11-14 03:57:39,296 - src.scraper - www.longines.com - INFO - 📊 Z-index range: min: 1000, max: 9999999
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 📊 DOM Analysis found 38 overlay selectors
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 📊 Total selectors after merge: 39 (HTML: 1, DOM: 38)
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🔄 Processing 39 discovered selectors for storage...
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered cookie_script selector: #usercentrics-root
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .SkipToMainContent_SkipToMainContent__XE5HC
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .Button_ButtonA11y__nA_2d
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .Header_Toolbar__8JmKF
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .PrivateSwipeArea-root
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .Header_Sticky__j9dbC
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .Header_Toolbar__Content__KUicx
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .button-text
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .MuiButtonBase-root
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .Header_Logo__74Wlj
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .Header_Toolbar__Content__List__dl_dE
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .button-paragraph
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .relative
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .Sticky_Sticky__reC2k
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .transition-height
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .swiper-scrollbar
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .px-[8vw]
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .CloseButton_Button__I2OMq
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .left-[5px]
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .Dialog_Head__hF57z
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .Grid_Wrapper__qAxOK
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .MenuLevel1_Wrapper__qckeV
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .swiper
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: #swiper-wrapper-37e3d63f2b493ceb
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .swiper-slide
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .Menu2_mobile_HeaderWrapper__0y5DK
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: .HomepageSliderControls_ContentWrapper__Q37RE
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: #swiper-wrapper-b40622ee384f45dd
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: #swiper-wrapper-41f1d377a0bcbb68
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: #swiper-wrapper-9a677e22c91c26e2
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered high_z_overlay selector: #swiper-wrapper-d7ee3ed824ec9922
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered large_overlay selector: .MuiDrawer-root
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered large_overlay selector: .MuiBackdrop-root
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered large_overlay selector: .MuiPaper-root
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered large_overlay selector: .Picture_Picture__YOVSZ
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered large_overlay selector: .HomepageSliderItem_Paragraph__mzyZo
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered large_overlay selector: .absolute
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered large_overlay selector: .Image_Image__7E39c
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 🎯 Discovered large_overlay selector: .z-10
+2025-11-14 03:57:39,297 - src.scraper - www.longines.com - INFO - 📦 Stored 39 unique selectors so far
+2025-11-14 03:57:39,339 - src.scraper - www.longines.com - INFO - ✅ PHASE 1.5 Complete: Discovered 39 site-specific selectors
+2025-11-14 03:57:39,339 - src.scraper - www.longines.com - INFO - 🎯 Discovered 39 site-specific popup patterns
+2025-11-14 03:57:39,361 - src.scraper - www.longines.com - INFO - 📂 Directory discovery completed: 1 directories found
+2025-11-14 03:57:39,361 - src.scraper - www.longines.com - INFO - 🚀 PHASE 2: Starting TRUE parallel scraping of ALL 1 discovered directories using 3 CPUs
+2025-11-14 03:57:39,361 - src.scraper - www.longines.com - INFO - 📁 Root directory: longines_2025_11_14_03_57
+2025-11-14 03:57:39,361 - src.scraper - www.longines.com - INFO - 📋 Prepared 1 independent scraping tasks
+2025-11-14 03:57:39,361 - src.scraper - www.longines.com - INFO - ⚡ Launching 3 processes (using ALL 3 configured CPUs)
+2025-11-14 03:57:39,536 - src.scraper - www.victoriassecret.com - INFO - 🔍 Starting HTML analysis for popup/cookie selectors...
+2025-11-14 03:57:39,728 - src.scraper - www.victoriassecret.com - INFO - 🎯 HTML Analysis: Discovered 5 selectors: .onetrust-banner-container(cookie_framework), [role="dialog"](modal), [aria-modal="true"](modal), button:contains("ok")(accept_button), .onetrust(cookie_script)
+2025-11-14 03:57:39,728 - src.scraper - www.victoriassecret.com - INFO - 📊 HTML analysis returned 5 potential selectors
+2025-11-14 03:57:39,728 - src.scraper - www.victoriassecret.com - INFO - 🔍 Analyzing DOM for high z-index overlays on https://www.victoriassecret.com
+2025-11-14 03:57:39,764 - src.scraper - www.aloyoga.com - INFO - 🔍 Starting HTML analysis for popup/cookie selectors...
+2025-11-14 03:57:39,785 - src.scraper - www.victoriassecret.com - INFO - 🔍 DOM Analysis Results: 6864 elements scanned, 35 potential overlays found
+2025-11-14 03:57:39,785 - src.scraper - www.victoriassecret.com - INFO - 📊 Top z-indexes found: [2147483647, 2147483647, 2147483646, 999, 155, 152, 142, 9, 9, 9]
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 📊 Z-index range: min: 9, max: 2147483647
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 📊 DOM Analysis found 35 overlay selectors
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 📊 Total selectors after merge: 40 (HTML: 5, DOM: 35)
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🔄 Processing 40 discovered selectors for storage...
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered cookie_framework selector: .onetrust-banner-container
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered modal selector: [role="dialog"]
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered modal selector: [aria-modal="true"]
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered accept_button selector: button:contains("ok")
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered cookie_script selector: .onetrust
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: #onetrust-pc-sdk
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: #ot-anchor
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: #ot-fltr-cnt
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .embeddedMessagingConversationButtonWrapper
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .sc-iolboe-0
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .sc-1phd0zv-0
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .sc-1jl7v8p-1
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .sc-1ffrgns-0
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .hide
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .show
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .sc-fd3fu1-0
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .sc-l2ap1c-0
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .sc-fso53m-0
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .sc-1do5g90-3
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .slick-slide
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .sc-1nurqct-0
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .sc-9ej7lb-0
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .sc-196dw0h-0
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .sc-1b9mm2x-0
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .sc-19t31kp-1
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .sc-761wk4-0
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: #close-pc-btn-handler
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .ot-tgl
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: #chkbox-id
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered high_z_overlay selector: .ot-sel-all-chkbox
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered large_overlay selector: .sc-1lzvqrf-6
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered large_overlay selector: .sc-swrtnk-0
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered large_overlay selector: .sc-1916wqc-0
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered large_overlay selector: .sc-mih600-0
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered large_overlay selector: .sc-wjj5hq-1
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered large_overlay selector: .product-feed-carousel-arrows
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered large_overlay selector: .product-card-link
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered large_overlay selector: .product-card-image
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered large_overlay selector: .onetrust-pc-dark-filter
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered large_overlay selector: #onetrust-banner-sdk
+2025-11-14 03:57:39,786 - src.scraper - www.victoriassecret.com - INFO - 📦 Stored 40 unique selectors so far
+2025-11-14 03:57:39,841 - src.scraper - www.victoriassecret.com - INFO - ✅ PHASE 1.5 Complete: Discovered 40 site-specific selectors
+2025-11-14 03:57:39,841 - src.scraper - www.victoriassecret.com - INFO - 🎯 Discovered 40 site-specific popup patterns
+2025-11-14 03:57:39,852 - src.scraper - www.aloyoga.com - INFO - 🎯 HTML Analysis: Discovered 4 selectors: [role="dialog"](modal), [aria-modal="true"](modal), button:contains("cookie policy")(accept_button), #48de3afd-262a-4713-ae5c-97b06c0b1300(accept_button)
+2025-11-14 03:57:39,852 - src.scraper - www.aloyoga.com - INFO - 📊 HTML analysis returned 4 potential selectors
+2025-11-14 03:57:39,852 - src.scraper - www.aloyoga.com - INFO - 🔍 Analyzing DOM for high z-index overlays on https://www.aloyoga.com
+2025-11-14 03:57:39,864 - src.scraper - www.victoriassecret.com - INFO - 📂 Directory discovery completed: 1 directories found
+2025-11-14 03:57:39,864 - src.scraper - www.victoriassecret.com - INFO - 🚀 PHASE 2: Starting TRUE parallel scraping of ALL 1 discovered directories using 3 CPUs
+2025-11-14 03:57:39,864 - src.scraper - www.victoriassecret.com - INFO - 📁 Root directory: victoriassecret_2025_11_14_03_57
+2025-11-14 03:57:39,864 - src.scraper - www.victoriassecret.com - INFO - 📋 Prepared 1 independent scraping tasks
+2025-11-14 03:57:39,864 - src.scraper - www.victoriassecret.com - INFO - ⚡ Launching 3 processes (using ALL 3 configured CPUs)
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🔍 DOM Analysis Results: 3793 elements scanned, 40 potential overlays found
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 📊 Top z-indexes found: [2147483638, 2147483637, 2147483636, 1050, 1000, 1000, 1000, 1000, 250, 200]
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 📊 Z-index range: min: 200, max: 2147483638
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 📊 DOM Analysis found 40 overlay selectors
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 📊 Total selectors after merge: 44 (HTML: 4, DOM: 40)
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🔄 Processing 44 discovered selectors for storage...
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered modal selector: [role="dialog"]
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered modal selector: [aria-modal="true"]
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered accept_button selector: button:contains("cookie policy")
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered accept_button selector: #48de3afd-262a-4713-ae5c-97b06c0b1300
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .osano-cm-window
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: #92129ad2-d81b-46e8-b7b7-81c7920f7c37
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: #48de3afd-262a-4713-ae5c-97b06c0b1300
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: #videoModal
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: #womenSubItem
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: #menSubItem
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: #shoesSubItem
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: #gift-guideSubItem
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: #collapseSearch
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: #shopify-section-main-nav
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .searchburger-tablet-wrapper-overlay
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .ui
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .carousel-indicators
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .header
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .menu
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .carousel-control-prev
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .carousel-control-next
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .carousel-caption
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .builder-block
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .swiper-button-prev
+2025-11-14 03:57:39,934 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .swiper-button-next
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .osano-cm-dialog__close
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .osano-cm-info-dialog-header__close
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: #mini-cart
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .alo-search-drawer
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: #contact_email
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: #toTop
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: #swiper-wrapper-a85278aaa8dd67d6
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .post__tag
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .footer
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered high_z_overlay selector: .close
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered large_overlay selector: #92607a41-d28c-45fe-86ff-4f7068340935
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered large_overlay selector: .osano-cm-info-dialog__info
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered large_overlay selector: #Image-36248403181927-0
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered large_overlay selector: #Image-36248377917799-0
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered large_overlay selector: #Image-36248404099431-0
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered large_overlay selector: #Image-36248402919783-0
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered large_overlay selector: #Image-36248378016103-0
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered large_overlay selector: .builder-image
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered large_overlay selector: .css-11yff89
+2025-11-14 03:57:39,935 - src.scraper - www.aloyoga.com - INFO - 📦 Stored 44 unique selectors so far
+2025-11-14 03:57:40,005 - src.scraper - www.aloyoga.com - INFO - ✅ PHASE 1.5 Complete: Discovered 44 site-specific selectors
+2025-11-14 03:57:40,005 - src.scraper - www.aloyoga.com - INFO - 🎯 Discovered 44 site-specific popup patterns
+2025-11-14 03:57:40,027 - src.scraper - www.aloyoga.com - INFO - 📂 Directory discovery completed: 1 directories found
+2025-11-14 03:57:40,027 - src.scraper - www.aloyoga.com - INFO - 🚀 PHASE 2: Starting TRUE parallel scraping of ALL 1 discovered directories using 3 CPUs
+2025-11-14 03:57:40,027 - src.scraper - www.aloyoga.com - INFO - 📁 Root directory: aloyoga_2025_11_14_03_57
+2025-11-14 03:57:40,028 - src.scraper - www.aloyoga.com - INFO - 📋 Prepared 1 independent scraping tasks
+2025-11-14 03:57:40,028 - src.scraper - www.aloyoga.com - INFO - ⚡ Launching 3 processes (using ALL 3 configured CPUs)
+2025-11-14 03:57:42,334 - popup_worker_0 - www.longines.com - INFO - Popup debug mode enabled - screenshots will be saved to popup_debug_screenshots
+2025-11-14 03:57:42,334 - popup_worker_0 - www.longines.com - INFO - 🔧 Popup handler initialized with 39 site-specific selectors
+2025-11-14 03:57:42,334 - popup_worker_0 - www.longines.com - INFO - 🎯 Starting popup handling with strategy: conservative
+2025-11-14 03:57:43,019 - popup_worker_0 - www.victoriassecret.com - INFO - Popup debug mode enabled - screenshots will be saved to popup_debug_screenshots
+2025-11-14 03:57:43,020 - popup_worker_0 - www.victoriassecret.com - INFO - 🔧 Popup handler initialized with 40 site-specific selectors
+2025-11-14 03:57:43,020 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Starting popup handling with strategy: conservative
+2025-11-14 03:57:43,249 - popup_worker_0 - www.aloyoga.com - INFO - Popup debug mode enabled - screenshots will be saved to popup_debug_screenshots
+2025-11-14 03:57:43,249 - popup_worker_0 - www.aloyoga.com - INFO - 🔧 Popup handler initialized with 44 site-specific selectors
+2025-11-14 03:57:43,249 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Starting popup handling with strategy: conservative
+2025-11-14 03:57:44,701 - popup_worker_0 - www.longines.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_popup_start.png
+2025-11-14 03:57:44,701 - popup_worker_0 - www.longines.com - INFO - 🚀 Starting conservative popup handling
+2025-11-14 03:57:44,702 - popup_worker_0 - www.longines.com - INFO - 📌 Step 1: Trying ESC key
+2025-11-14 03:57:44,972 - popup_worker_0 - www.aloyoga.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_popup_start.png
+2025-11-14 03:57:44,972 - popup_worker_0 - www.aloyoga.com - INFO - 🚀 Starting conservative popup handling
+2025-11-14 03:57:44,972 - popup_worker_0 - www.aloyoga.com - INFO - 📌 Step 1: Trying ESC key
+2025-11-14 03:57:45,227 - popup_worker_0 - www.longines.com - INFO - ✅ ESC key pressed successfully
+2025-11-14 03:57:45,494 - popup_worker_0 - www.aloyoga.com - INFO - ✅ ESC key pressed successfully
+2025-11-14 03:57:45,751 - popup_worker_0 - www.victoriassecret.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_popup_start.png
+2025-11-14 03:57:45,751 - popup_worker_0 - www.victoriassecret.com - INFO - 🚀 Starting conservative popup handling
+2025-11-14 03:57:45,751 - popup_worker_0 - www.victoriassecret.com - INFO - 📌 Step 1: Trying ESC key
+2025-11-14 03:57:46,290 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ ESC key pressed successfully
+2025-11-14 03:57:47,355 - popup_worker_0 - www.longines.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_after_escape_key.png
+2025-11-14 03:57:47,555 - popup_worker_0 - www.longines.com - INFO - 📌 Step 2: Handling cookie consent popups (using 39 site-specific selectors)
+2025-11-14 03:57:47,555 - popup_worker_0 - www.longines.com - INFO - 🍪 Handling cookie consent popups
+2025-11-14 03:57:47,556 - popup_worker_0 - www.longines.com - INFO - 🎯 Using 39 discovered selectors (2 high-priority, 37 others)
+2025-11-14 03:57:47,556 - popup_worker_0 - www.longines.com - INFO - 🔍 Checking 61 cookie selectors (including 22 general patterns)
+2025-11-14 03:57:47,556 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: #usercentrics-root
+2025-11-14 03:57:47,566 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container #usercentrics-root not found in DOM, skipping
+2025-11-14 03:57:47,566 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .Dialog_Head__hF57z
+2025-11-14 03:57:47,585 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .Dialog_Head__hF57z exists but not visible, trying to remove anyway...
+2025-11-14 03:57:47,590 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .SkipToMainContent_SkipToMainContent__XE5HC
+2025-11-14 03:57:47,601 - popup_worker_0 - www.longines.com - INFO - ✅ Container .SkipToMainContent_SkipToMainContent__XE5HC found and visible, looking for buttons...
+2025-11-14 03:57:47,622 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 0 potential buttons for selector .SkipToMainContent_SkipToMainContent__XE5HC
+2025-11-14 03:57:47,622 - popup_worker_0 - www.longines.com - INFO - ⚠️ No buttons found in .SkipToMainContent_SkipToMainContent__XE5HC, trying alternative approaches...
+2025-11-14 03:57:47,628 - popup_worker_0 - www.longines.com - INFO - 🔍 Found 0 clickable elements in container .SkipToMainContent_SkipToMainContent__XE5HC
+2025-11-14 03:57:47,628 - popup_worker_0 - www.longines.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .SkipToMainContent_SkipToMainContent__XE5HC via JavaScript
+2025-11-14 03:57:47,633 - popup_worker_0 - www.longines.com - INFO - ✅ Successfully FORCE removed container .SkipToMainContent_SkipToMainContent__XE5HC
+2025-11-14 03:57:48,634 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .Button_ButtonA11y__nA_2d
+2025-11-14 03:57:48,648 - popup_worker_0 - www.longines.com - INFO - ✅ Container .Button_ButtonA11y__nA_2d found and visible, looking for buttons...
+2025-11-14 03:57:48,667 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 0 potential buttons for selector .Button_ButtonA11y__nA_2d
+2025-11-14 03:57:48,667 - popup_worker_0 - www.longines.com - INFO - ⚠️ No buttons found in .Button_ButtonA11y__nA_2d, trying alternative approaches...
+2025-11-14 03:57:48,672 - popup_worker_0 - www.longines.com - INFO - 🔍 Found 0 clickable elements in container .Button_ButtonA11y__nA_2d
+2025-11-14 03:57:48,672 - popup_worker_0 - www.longines.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .Button_ButtonA11y__nA_2d via JavaScript
+2025-11-14 03:57:48,676 - popup_worker_0 - www.longines.com - INFO - ✅ Successfully FORCE removed container .Button_ButtonA11y__nA_2d
+2025-11-14 03:57:49,262 - popup_worker_0 - www.victoriassecret.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_after_escape_key.png
+2025-11-14 03:57:49,268 - popup_worker_0 - www.aloyoga.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_after_escape_key.png
+2025-11-14 03:57:49,463 - popup_worker_0 - www.victoriassecret.com - INFO - 📌 Step 2: Handling cookie consent popups (using 40 site-specific selectors)
+2025-11-14 03:57:49,463 - popup_worker_0 - www.victoriassecret.com - INFO - 🍪 Handling cookie consent popups
+2025-11-14 03:57:49,463 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Using 40 discovered selectors (7 high-priority, 33 others)
+2025-11-14 03:57:49,463 - popup_worker_0 - www.victoriassecret.com - INFO - 🍪 OneTrust detected, adding OneTrust-specific selectors
+2025-11-14 03:57:49,463 - popup_worker_0 - www.victoriassecret.com - INFO - 🍪 Added 11 OneTrust-specific selectors
+2025-11-14 03:57:49,463 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 Checking 73 cookie selectors (including 22 general patterns)
+2025-11-14 03:57:49,463 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: #onetrust-banner-sdk
+2025-11-14 03:57:49,470 - popup_worker_0 - www.aloyoga.com - INFO - 📌 Step 2: Handling cookie consent popups (using 44 site-specific selectors)
+2025-11-14 03:57:49,470 - popup_worker_0 - www.aloyoga.com - INFO - 🍪 Handling cookie consent popups
+2025-11-14 03:57:49,470 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Using 44 discovered selectors (8 high-priority, 36 others)
+2025-11-14 03:57:49,470 - popup_worker_0 - www.aloyoga.com - INFO - 🔍 Checking 66 cookie selectors (including 22 general patterns)
+2025-11-14 03:57:49,470 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: [role="dialog"]
+2025-11-14 03:57:49,490 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container #onetrust-banner-sdk found and visible, looking for buttons...
+2025-11-14 03:57:49,545 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 2 potential buttons for selector #onetrust-banner-sdk
+2025-11-14 03:57:49,557 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 1 in #onetrust-banner-sdk (text: 'OK')
+2025-11-14 03:57:49,580 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container [role="dialog"] exists but not visible, trying to remove anyway...
+2025-11-14 03:57:49,678 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .Header_Toolbar__8JmKF
+2025-11-14 03:57:49,690 - popup_worker_0 - www.longines.com - INFO - ✅ Container .Header_Toolbar__8JmKF found and visible, looking for buttons...
+2025-11-14 03:57:49,699 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: [aria-modal="true"]
+2025-11-14 03:57:49,723 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 26 potential buttons for selector .Header_Toolbar__8JmKF
+2025-11-14 03:57:49,739 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 2 in .Header_Toolbar__8JmKF (text: 'United States')
+2025-11-14 03:57:50,099 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container [aria-modal="true"] exists but not visible, trying to remove anyway...
+2025-11-14 03:57:50,110 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: button:contains("cookie policy")
+2025-11-14 03:57:50,129 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #videoModal
+2025-11-14 03:57:50,161 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container #videoModal exists but not visible, trying to remove anyway...
+2025-11-14 03:57:50,172 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .searchburger-tablet-wrapper-overlay
+2025-11-14 03:57:50,227 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .searchburger-tablet-wrapper-overlay exists but not visible, trying to remove anyway...
+2025-11-14 03:57:50,234 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .osano-cm-dialog__close
+2025-11-14 03:57:50,239 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .osano-cm-dialog__close not found in DOM, skipping
+2025-11-14 03:57:50,240 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .osano-cm-info-dialog-header__close
+2025-11-14 03:57:50,245 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .osano-cm-info-dialog-header__close not found in DOM, skipping
+2025-11-14 03:57:50,245 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .osano-cm-info-dialog__info
+2025-11-14 03:57:50,252 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .osano-cm-info-dialog__info not found in DOM, skipping
+2025-11-14 03:57:50,252 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #48de3afd-262a-4713-ae5c-97b06c0b1300
+2025-11-14 03:57:50,257 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .osano-cm-window
+2025-11-14 03:57:50,269 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .osano-cm-window exists but not visible, trying to remove anyway...
+2025-11-14 03:57:50,278 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #92129ad2-d81b-46e8-b7b7-81c7920f7c37
+2025-11-14 03:57:50,315 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #48de3afd-262a-4713-ae5c-97b06c0b1300
+2025-11-14 03:57:50,331 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #womenSubItem
+2025-11-14 03:57:50,337 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully clicked accept button in #onetrust-banner-sdk
+2025-11-14 03:57:50,345 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: #onetrust-pc-sdk
+2025-11-14 03:57:50,359 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container #onetrust-pc-sdk exists but not visible, trying to remove anyway...
+2025-11-14 03:57:50,366 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: #onetrust-consent-sdk
+2025-11-14 03:57:50,377 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container #onetrust-consent-sdk exists but not visible, trying to remove anyway...
+2025-11-14 03:57:50,382 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .onetrust-banner-container
+2025-11-14 03:57:50,392 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container #womenSubItem exists but not visible, trying to remove anyway...
+2025-11-14 03:57:50,397 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #menSubItem
+2025-11-14 03:57:50,410 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container #menSubItem exists but not visible, trying to remove anyway...
+2025-11-14 03:57:50,417 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #shoesSubItem
+2025-11-14 03:57:50,436 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container #shoesSubItem exists but not visible, trying to remove anyway...
+2025-11-14 03:57:50,441 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #gift-guideSubItem
+2025-11-14 03:57:50,455 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container #gift-guideSubItem exists but not visible, trying to remove anyway...
+2025-11-14 03:57:50,460 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #collapseSearch
+2025-11-14 03:57:50,474 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container #collapseSearch exists but not visible, trying to remove anyway...
+2025-11-14 03:57:50,479 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #shopify-section-main-nav
+2025-11-14 03:57:50,493 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Container #shopify-section-main-nav found and visible, looking for buttons...
+2025-11-14 03:57:50,534 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Found 3 potential buttons for selector #shopify-section-main-nav
+2025-11-14 03:57:50,544 - popup_worker_0 - www.aloyoga.com - INFO - 🖱️ Clicking accept button 1 in #shopify-section-main-nav (text: 'no text')
+2025-11-14 03:57:51,303 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 OneTrust selector .onetrust-banner-container not found, trying case-insensitive search...
+2025-11-14 03:57:51,322 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container .onetrust-banner-container not found in DOM, skipping
+2025-11-14 03:57:51,322 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .onetrust-pc-container
+2025-11-14 03:57:51,754 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 3 in .Header_Toolbar__8JmKF (text: 'Customer Service')
+2025-11-14 03:57:52,244 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 OneTrust selector .onetrust-pc-container not found, trying case-insensitive search...
+2025-11-14 03:57:52,268 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container .onetrust-pc-container not found in DOM, skipping
+2025-11-14 03:57:52,268 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [id*="onetrust"]
+2025-11-14 03:57:52,282 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [id*="onetrust"] exists but not visible, trying to remove anyway...
+2025-11-14 03:57:52,285 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [class*="onetrust"]
+2025-11-14 03:57:52,558 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .ui
+2025-11-14 03:57:52,570 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .ui exists but not visible, trying to remove anyway...
+2025-11-14 03:57:52,574 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .carousel-indicators
+2025-11-14 03:57:52,587 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .carousel-indicators exists but not visible, trying to remove anyway...
+2025-11-14 03:57:52,592 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .header
+2025-11-14 03:57:52,597 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .header not found in DOM, skipping
+2025-11-14 03:57:52,597 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .menu
+2025-11-14 03:57:52,602 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .menu not found in DOM, skipping
+2025-11-14 03:57:52,602 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .carousel-control-prev
+2025-11-14 03:57:52,612 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .carousel-control-prev exists but not visible, trying to remove anyway...
+2025-11-14 03:57:52,617 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .carousel-control-next
+2025-11-14 03:57:52,627 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .carousel-control-next exists but not visible, trying to remove anyway...
+2025-11-14 03:57:52,631 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .carousel-caption
+2025-11-14 03:57:52,642 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Container .carousel-caption found and visible, looking for buttons...
+2025-11-14 03:57:52,672 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Found 2 potential buttons for selector .carousel-caption
+2025-11-14 03:57:52,682 - popup_worker_0 - www.aloyoga.com - INFO - 🖱️ Clicking accept button 1 in .carousel-caption (text: 'JOIN NOW')
+2025-11-14 03:57:53,208 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 OneTrust selector [class*="onetrust"] not found, trying case-insensitive search...
+2025-11-14 03:57:53,229 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [class*="onetrust"] not found in DOM, skipping
+2025-11-14 03:57:53,229 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: #onetrust-accept-btn-handler
+2025-11-14 03:57:53,768 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 4 in .Header_Toolbar__8JmKF (text: 'Our Universe')
+2025-11-14 03:57:54,149 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 OneTrust selector #onetrust-accept-btn-handler not found, trying case-insensitive search...
+2025-11-14 03:57:54,164 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container #onetrust-accept-btn-handler not found in DOM, skipping
+2025-11-14 03:57:54,164 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: #onetrust-pc-btn-handler
+2025-11-14 03:57:54,689 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .builder-block
+2025-11-14 03:57:54,703 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Container .builder-block found and visible, looking for buttons...
+2025-11-14 03:57:54,737 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Found 8 potential buttons for selector .builder-block
+2025-11-14 03:57:54,755 - popup_worker_0 - www.aloyoga.com - INFO - 🖱️ Clicking accept button 3 in .builder-block (text: 'START HERE')
+2025-11-14 03:57:55,084 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 OneTrust selector #onetrust-pc-btn-handler not found, trying case-insensitive search...
+2025-11-14 03:57:55,099 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container #onetrust-pc-btn-handler not found in DOM, skipping
+2025-11-14 03:57:55,099 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: button[id*="onetrust-accept"]
+2025-11-14 03:57:55,782 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 5 in .Header_Toolbar__8JmKF (text: 'Find my Longines')
+2025-11-14 03:57:56,021 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 OneTrust selector button[id*="onetrust-accept"] not found, trying case-insensitive search...
+2025-11-14 03:57:56,037 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container button[id*="onetrust-accept"] not found in DOM, skipping
+2025-11-14 03:57:56,037 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: button[id*="onetrust-pc-accept"]
+2025-11-14 03:57:56,768 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .swiper-button-prev
+2025-11-14 03:57:56,779 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Container .swiper-button-prev found and visible, looking for buttons...
+2025-11-14 03:57:56,811 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Found 0 potential buttons for selector .swiper-button-prev
+2025-11-14 03:57:56,811 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ No buttons found in .swiper-button-prev, trying alternative approaches...
+2025-11-14 03:57:56,817 - popup_worker_0 - www.aloyoga.com - INFO - 🔍 Found 0 clickable elements in container .swiper-button-prev
+2025-11-14 03:57:56,817 - popup_worker_0 - www.aloyoga.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .swiper-button-prev via JavaScript
+2025-11-14 03:57:56,823 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Successfully FORCE removed container .swiper-button-prev
+2025-11-14 03:57:56,958 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 OneTrust selector button[id*="onetrust-pc-accept"] not found, trying case-insensitive search...
+2025-11-14 03:57:56,973 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container button[id*="onetrust-pc-accept"] not found in DOM, skipping
+2025-11-14 03:57:56,973 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .onetrust-banner-container
+2025-11-14 03:57:57,784 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .PrivateSwipeArea-root
+2025-11-14 03:57:57,796 - popup_worker_0 - www.longines.com - INFO - ✅ Container .PrivateSwipeArea-root found and visible, looking for buttons...
+2025-11-14 03:57:57,814 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 0 potential buttons for selector .PrivateSwipeArea-root
+2025-11-14 03:57:57,814 - popup_worker_0 - www.longines.com - INFO - ⚠️ No buttons found in .PrivateSwipeArea-root, trying alternative approaches...
+2025-11-14 03:57:57,819 - popup_worker_0 - www.longines.com - INFO - 🔍 Found 0 clickable elements in container .PrivateSwipeArea-root
+2025-11-14 03:57:57,819 - popup_worker_0 - www.longines.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .PrivateSwipeArea-root via JavaScript
+2025-11-14 03:57:57,823 - popup_worker_0 - www.longines.com - INFO - ✅ Successfully FORCE removed container .PrivateSwipeArea-root
+2025-11-14 03:57:57,824 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .swiper-button-next
+2025-11-14 03:57:57,837 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Container .swiper-button-next found and visible, looking for buttons...
+2025-11-14 03:57:57,870 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Found 0 potential buttons for selector .swiper-button-next
+2025-11-14 03:57:57,870 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ No buttons found in .swiper-button-next, trying alternative approaches...
+2025-11-14 03:57:57,876 - popup_worker_0 - www.aloyoga.com - INFO - 🔍 Found 0 clickable elements in container .swiper-button-next
+2025-11-14 03:57:57,876 - popup_worker_0 - www.aloyoga.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .swiper-button-next via JavaScript
+2025-11-14 03:57:57,881 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Successfully FORCE removed container .swiper-button-next
+2025-11-14 03:57:57,895 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 OneTrust selector .onetrust-banner-container not found, trying case-insensitive search...
+2025-11-14 03:57:57,911 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container .onetrust-banner-container not found in DOM, skipping
+2025-11-14 03:57:57,911 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [role="dialog"]
+2025-11-14 03:57:57,925 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container [role="dialog"] found and visible, looking for buttons...
+2025-11-14 03:57:57,981 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 3 potential buttons for selector [role="dialog"]
+2025-11-14 03:57:57,991 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 1 in [role="dialog"] (text: 'no text')
+2025-11-14 03:57:58,554 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully clicked accept button in [role="dialog"]
+2025-11-14 03:57:58,566 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 2 in [role="dialog"] (text: 'JOIN NOW')
+2025-11-14 03:57:58,824 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .Header_Sticky__j9dbC
+2025-11-14 03:57:58,836 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .Header_Sticky__j9dbC exists but not visible, trying to remove anyway...
+2025-11-14 03:57:58,841 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .Header_Toolbar__Content__KUicx
+2025-11-14 03:57:58,845 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .Header_Toolbar__Content__KUicx not found in DOM, skipping
+2025-11-14 03:57:58,845 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .button-text
+2025-11-14 03:57:58,882 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #mini-cart
+2025-11-14 03:57:58,896 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container #mini-cart exists but not visible, trying to remove anyway...
+2025-11-14 03:57:58,901 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .alo-search-drawer
+2025-11-14 03:57:58,902 - popup_worker_0 - www.longines.com - INFO - ✅ Container .button-text found and visible, looking for buttons...
+2025-11-14 03:57:58,912 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .alo-search-drawer exists but not visible, trying to remove anyway...
+2025-11-14 03:57:58,916 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #contact_email
+2025-11-14 03:57:58,916 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 0 potential buttons for selector .button-text
+2025-11-14 03:57:58,917 - popup_worker_0 - www.longines.com - INFO - ⚠️ No buttons found in .button-text, trying alternative approaches...
+2025-11-14 03:57:58,922 - popup_worker_0 - www.longines.com - INFO - 🔍 Found 0 clickable elements in container .button-text
+2025-11-14 03:57:58,922 - popup_worker_0 - www.longines.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .button-text via JavaScript
+2025-11-14 03:57:58,926 - popup_worker_0 - www.longines.com - INFO - ✅ Successfully FORCE removed container .button-text
+2025-11-14 03:57:58,927 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Container #contact_email found and visible, looking for buttons...
+2025-11-14 03:57:58,957 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Found 0 potential buttons for selector #contact_email
+2025-11-14 03:57:58,957 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ No buttons found in #contact_email, trying alternative approaches...
+2025-11-14 03:57:58,962 - popup_worker_0 - www.aloyoga.com - INFO - 🔍 Found 0 clickable elements in container #contact_email
+2025-11-14 03:57:58,962 - popup_worker_0 - www.aloyoga.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container #contact_email via JavaScript
+2025-11-14 03:57:58,968 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Successfully FORCE removed container #contact_email
+2025-11-14 03:57:59,551 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully clicked accept button in [role="dialog"]
+2025-11-14 03:57:59,558 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [aria-modal="true"]
+2025-11-14 03:57:59,568 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [aria-modal="true"] not found in DOM, skipping
+2025-11-14 03:57:59,568 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .onetrust
+2025-11-14 03:57:59,927 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .MuiButtonBase-root
+2025-11-14 03:57:59,940 - popup_worker_0 - www.longines.com - INFO - ✅ Container .MuiButtonBase-root found and visible, looking for buttons...
+2025-11-14 03:57:59,954 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 0 potential buttons for selector .MuiButtonBase-root
+2025-11-14 03:57:59,954 - popup_worker_0 - www.longines.com - INFO - ⚠️ No buttons found in .MuiButtonBase-root, trying alternative approaches...
+2025-11-14 03:57:59,959 - popup_worker_0 - www.longines.com - INFO - 🔍 Found 0 clickable elements in container .MuiButtonBase-root
+2025-11-14 03:57:59,959 - popup_worker_0 - www.longines.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .MuiButtonBase-root via JavaScript
+2025-11-14 03:57:59,963 - popup_worker_0 - www.longines.com - INFO - ✅ Successfully FORCE removed container .MuiButtonBase-root
+2025-11-14 03:57:59,969 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #toTop
+2025-11-14 03:57:59,983 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Container #toTop found and visible, looking for buttons...
+2025-11-14 03:58:00,012 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Found 0 potential buttons for selector #toTop
+2025-11-14 03:58:00,012 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ No buttons found in #toTop, trying alternative approaches...
+2025-11-14 03:58:00,017 - popup_worker_0 - www.aloyoga.com - INFO - 🔍 Found 0 clickable elements in container #toTop
+2025-11-14 03:58:00,017 - popup_worker_0 - www.aloyoga.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container #toTop via JavaScript
+2025-11-14 03:58:00,022 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Successfully FORCE removed container #toTop
+2025-11-14 03:58:00,489 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 OneTrust selector .onetrust not found, trying case-insensitive search...
+2025-11-14 03:58:00,505 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container .onetrust not found in DOM, skipping
+2025-11-14 03:58:00,505 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: #onetrust-pc-sdk
+2025-11-14 03:58:00,965 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .Header_Logo__74Wlj
+2025-11-14 03:58:00,969 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .Header_Logo__74Wlj not found in DOM, skipping
+2025-11-14 03:58:00,969 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .Header_Toolbar__Content__List__dl_dE
+2025-11-14 03:58:00,974 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .Header_Toolbar__Content__List__dl_dE not found in DOM, skipping
+2025-11-14 03:58:00,974 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .button-paragraph
+2025-11-14 03:58:00,978 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .button-paragraph not found in DOM, skipping
+2025-11-14 03:58:00,978 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .relative
+2025-11-14 03:58:00,989 - popup_worker_0 - www.longines.com - INFO - ✅ Container .relative found and visible, looking for buttons...
+2025-11-14 03:58:01,008 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 11 potential buttons for selector .relative
+2025-11-14 03:58:01,017 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 1 in .relative (text: 'Close')
+2025-11-14 03:58:01,024 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #swiper-wrapper-a85278aaa8dd67d6
+2025-11-14 03:58:01,030 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container #swiper-wrapper-a85278aaa8dd67d6 not found in DOM, skipping
+2025-11-14 03:58:01,030 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .post__tag
+2025-11-14 03:58:01,042 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Container .post__tag found and visible, looking for buttons...
+2025-11-14 03:58:01,071 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Found 0 potential buttons for selector .post__tag
+2025-11-14 03:58:01,071 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ No buttons found in .post__tag, trying alternative approaches...
+2025-11-14 03:58:01,076 - popup_worker_0 - www.aloyoga.com - INFO - 🔍 Found 0 clickable elements in container .post__tag
+2025-11-14 03:58:01,076 - popup_worker_0 - www.aloyoga.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .post__tag via JavaScript
+2025-11-14 03:58:01,081 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Successfully FORCE removed container .post__tag
+2025-11-14 03:58:01,428 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 OneTrust selector #onetrust-pc-sdk not found, trying case-insensitive search...
+2025-11-14 03:58:01,443 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container #onetrust-pc-sdk not found in DOM, skipping
+2025-11-14 03:58:01,443 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .onetrust-pc-dark-filter
+2025-11-14 03:58:02,082 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .footer
+2025-11-14 03:58:02,095 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Container .footer found and visible, looking for buttons...
+2025-11-14 03:58:02,128 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Found 4 potential buttons for selector .footer
+2025-11-14 03:58:02,137 - popup_worker_0 - www.aloyoga.com - INFO - 🖱️ Clicking accept button 1 in .footer (text: '🇺🇸
+
+United States')
+2025-11-14 03:58:02,363 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 OneTrust selector .onetrust-pc-dark-filter not found, trying case-insensitive search...
+2025-11-14 03:58:02,377 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container .onetrust-pc-dark-filter not found in DOM, skipping
+2025-11-14 03:58:02,377 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: #onetrust-banner-sdk
+2025-11-14 03:58:03,030 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 2 in .relative (text: 'no text')
+2025-11-14 03:58:03,300 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 OneTrust selector #onetrust-banner-sdk not found, trying case-insensitive search...
+2025-11-14 03:58:03,315 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container #onetrust-banner-sdk not found in DOM, skipping
+2025-11-14 03:58:03,315 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: button:contains("ok")
+2025-11-14 03:58:03,321 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: #ot-anchor
+2025-11-14 03:58:03,327 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container #ot-anchor not found in DOM, skipping
+2025-11-14 03:58:03,327 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: #ot-fltr-cnt
+2025-11-14 03:58:03,333 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container #ot-fltr-cnt not found in DOM, skipping
+2025-11-14 03:58:03,333 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .embeddedMessagingConversationButtonWrapper
+2025-11-14 03:58:03,345 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container .embeddedMessagingConversationButtonWrapper exists but not visible, trying to remove anyway...
+2025-11-14 03:58:03,348 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-iolboe-0
+2025-11-14 03:58:03,360 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-iolboe-0 found and visible, looking for buttons...
+2025-11-14 03:58:03,409 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 0 potential buttons for selector .sc-iolboe-0
+2025-11-14 03:58:03,409 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ No buttons found in .sc-iolboe-0, trying alternative approaches...
+2025-11-14 03:58:03,415 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 Found 0 clickable elements in container .sc-iolboe-0
+2025-11-14 03:58:03,415 - popup_worker_0 - www.victoriassecret.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .sc-iolboe-0 via JavaScript
+2025-11-14 03:58:03,420 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully FORCE removed container .sc-iolboe-0
+2025-11-14 03:58:04,150 - popup_worker_0 - www.aloyoga.com - INFO - 🖱️ Clicking accept button 2 in .footer (text: 'no text')
+2025-11-14 03:58:04,421 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-1phd0zv-0
+2025-11-14 03:58:04,437 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container .sc-1phd0zv-0 exists but not visible, trying to remove anyway...
+2025-11-14 03:58:04,441 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-1jl7v8p-1
+2025-11-14 03:58:04,465 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-1jl7v8p-1 found and visible, looking for buttons...
+2025-11-14 03:58:04,514 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 5 potential buttons for selector .sc-1jl7v8p-1
+2025-11-14 03:58:04,524 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 1 in .sc-1jl7v8p-1 (text: 'no text')
+2025-11-14 03:58:05,045 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 3 in .relative (text: 'no text')
+2025-11-14 03:58:05,061 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully clicked accept button in .sc-1jl7v8p-1
+2025-11-14 03:58:05,072 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 2 in .sc-1jl7v8p-1 (text: 'Details')
+2025-11-14 03:58:05,812 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully clicked accept button in .sc-1jl7v8p-1
+2025-11-14 03:58:05,823 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 3 in .sc-1jl7v8p-1 (text: 'VIEW OFFERS')
+2025-11-14 03:58:06,167 - popup_worker_0 - www.aloyoga.com - INFO - 🖱️ Clicking accept button 4 in .footer (text: 'Cookie Preferences')
+2025-11-14 03:58:07,059 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 4 in .relative (text: 'no text')
+2025-11-14 03:58:07,836 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 4 in .sc-1jl7v8p-1 (text: 'Details')
+2025-11-14 03:58:08,170 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .close
+2025-11-14 03:58:08,177 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .close not found in DOM, skipping
+2025-11-14 03:58:08,177 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #92607a41-d28c-45fe-86ff-4f7068340935
+2025-11-14 03:58:08,182 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #Image-36248403181927-0
+2025-11-14 03:58:08,193 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Container #Image-36248403181927-0 found and visible, looking for buttons...
+2025-11-14 03:58:08,221 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Found 0 potential buttons for selector #Image-36248403181927-0
+2025-11-14 03:58:08,221 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ No buttons found in #Image-36248403181927-0, trying alternative approaches...
+2025-11-14 03:58:08,226 - popup_worker_0 - www.aloyoga.com - INFO - 🔍 Found 0 clickable elements in container #Image-36248403181927-0
+2025-11-14 03:58:08,227 - popup_worker_0 - www.aloyoga.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container #Image-36248403181927-0 via JavaScript
+2025-11-14 03:58:08,232 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Successfully FORCE removed container #Image-36248403181927-0
+2025-11-14 03:58:09,075 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 5 in .relative (text: 'no text')
+2025-11-14 03:58:09,233 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #Image-36248377917799-0
+2025-11-14 03:58:09,245 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Container #Image-36248377917799-0 found and visible, looking for buttons...
+2025-11-14 03:58:09,276 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Found 0 potential buttons for selector #Image-36248377917799-0
+2025-11-14 03:58:09,276 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ No buttons found in #Image-36248377917799-0, trying alternative approaches...
+2025-11-14 03:58:09,282 - popup_worker_0 - www.aloyoga.com - INFO - 🔍 Found 0 clickable elements in container #Image-36248377917799-0
+2025-11-14 03:58:09,282 - popup_worker_0 - www.aloyoga.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container #Image-36248377917799-0 via JavaScript
+2025-11-14 03:58:09,287 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Successfully FORCE removed container #Image-36248377917799-0
+2025-11-14 03:58:09,848 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 5 in .sc-1jl7v8p-1 (text: 'VIEW OFFERS')
+2025-11-14 03:58:10,288 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #Image-36248404099431-0
+2025-11-14 03:58:10,302 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Container #Image-36248404099431-0 found and visible, looking for buttons...
+2025-11-14 03:58:10,331 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Found 0 potential buttons for selector #Image-36248404099431-0
+2025-11-14 03:58:10,331 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ No buttons found in #Image-36248404099431-0, trying alternative approaches...
+2025-11-14 03:58:10,336 - popup_worker_0 - www.aloyoga.com - INFO - 🔍 Found 0 clickable elements in container #Image-36248404099431-0
+2025-11-14 03:58:10,336 - popup_worker_0 - www.aloyoga.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container #Image-36248404099431-0 via JavaScript
+2025-11-14 03:58:10,342 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Successfully FORCE removed container #Image-36248404099431-0
+2025-11-14 03:58:11,077 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .Sticky_Sticky__reC2k
+2025-11-14 03:58:11,091 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .Sticky_Sticky__reC2k exists but not visible, trying to remove anyway...
+2025-11-14 03:58:11,095 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .transition-height
+2025-11-14 03:58:11,174 - popup_worker_0 - www.longines.com - INFO - ✅ Container .transition-height found and visible, looking for buttons...
+2025-11-14 03:58:11,199 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 0 potential buttons for selector .transition-height
+2025-11-14 03:58:11,199 - popup_worker_0 - www.longines.com - INFO - ⚠️ No buttons found in .transition-height, trying alternative approaches...
+2025-11-14 03:58:11,206 - popup_worker_0 - www.longines.com - INFO - 🔍 Found 2 clickable elements in container .transition-height
+2025-11-14 03:58:11,330 - popup_worker_0 - www.longines.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .transition-height via JavaScript
+2025-11-14 03:58:11,339 - popup_worker_0 - www.longines.com - INFO - ✅ Successfully FORCE removed container .transition-height
+2025-11-14 03:58:11,343 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #Image-36248402919783-0
+2025-11-14 03:58:11,357 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Container #Image-36248402919783-0 found and visible, looking for buttons...
+2025-11-14 03:58:11,388 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Found 0 potential buttons for selector #Image-36248402919783-0
+2025-11-14 03:58:11,388 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ No buttons found in #Image-36248402919783-0, trying alternative approaches...
+2025-11-14 03:58:11,394 - popup_worker_0 - www.aloyoga.com - INFO - 🔍 Found 0 clickable elements in container #Image-36248402919783-0
+2025-11-14 03:58:11,394 - popup_worker_0 - www.aloyoga.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container #Image-36248402919783-0 via JavaScript
+2025-11-14 03:58:11,400 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Successfully FORCE removed container #Image-36248402919783-0
+2025-11-14 03:58:11,851 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-1ffrgns-0
+2025-11-14 03:58:11,866 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-1ffrgns-0 found and visible, looking for buttons...
+2025-11-14 03:58:11,912 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 0 potential buttons for selector .sc-1ffrgns-0
+2025-11-14 03:58:11,912 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ No buttons found in .sc-1ffrgns-0, trying alternative approaches...
+2025-11-14 03:58:11,917 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 Found 0 clickable elements in container .sc-1ffrgns-0
+2025-11-14 03:58:11,918 - popup_worker_0 - www.victoriassecret.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .sc-1ffrgns-0 via JavaScript
+2025-11-14 03:58:11,922 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully FORCE removed container .sc-1ffrgns-0
+2025-11-14 03:58:12,340 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .swiper-scrollbar
+2025-11-14 03:58:12,355 - popup_worker_0 - www.longines.com - INFO - ✅ Container .swiper-scrollbar found and visible, looking for buttons...
+2025-11-14 03:58:12,378 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 0 potential buttons for selector .swiper-scrollbar
+2025-11-14 03:58:12,378 - popup_worker_0 - www.longines.com - INFO - ⚠️ No buttons found in .swiper-scrollbar, trying alternative approaches...
+2025-11-14 03:58:12,384 - popup_worker_0 - www.longines.com - INFO - 🔍 Found 0 clickable elements in container .swiper-scrollbar
+2025-11-14 03:58:12,384 - popup_worker_0 - www.longines.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .swiper-scrollbar via JavaScript
+2025-11-14 03:58:12,388 - popup_worker_0 - www.longines.com - INFO - ✅ Successfully FORCE removed container .swiper-scrollbar
+2025-11-14 03:58:12,401 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #Image-36248378016103-0
+2025-11-14 03:58:12,413 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Container #Image-36248378016103-0 found and visible, looking for buttons...
+2025-11-14 03:58:12,443 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Found 0 potential buttons for selector #Image-36248378016103-0
+2025-11-14 03:58:12,443 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ No buttons found in #Image-36248378016103-0, trying alternative approaches...
+2025-11-14 03:58:12,448 - popup_worker_0 - www.aloyoga.com - INFO - 🔍 Found 0 clickable elements in container #Image-36248378016103-0
+2025-11-14 03:58:12,448 - popup_worker_0 - www.aloyoga.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container #Image-36248378016103-0 via JavaScript
+2025-11-14 03:58:12,453 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Successfully FORCE removed container #Image-36248378016103-0
+2025-11-14 03:58:12,923 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .hide
+2025-11-14 03:58:12,938 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container .hide exists but not visible, trying to remove anyway...
+2025-11-14 03:58:12,942 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .show
+2025-11-14 03:58:12,953 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .show found and visible, looking for buttons...
+2025-11-14 03:58:13,005 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 0 potential buttons for selector .show
+2025-11-14 03:58:13,005 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ No buttons found in .show, trying alternative approaches...
+2025-11-14 03:58:13,010 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 Found 0 clickable elements in container .show
+2025-11-14 03:58:13,010 - popup_worker_0 - www.victoriassecret.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .show via JavaScript
+2025-11-14 03:58:13,014 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully FORCE removed container .show
+2025-11-14 03:58:13,389 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .px-[8vw]
+2025-11-14 03:58:13,399 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .CloseButton_Button__I2OMq
+2025-11-14 03:58:13,419 - popup_worker_0 - www.longines.com - INFO - ✅ Container .CloseButton_Button__I2OMq found and visible, looking for buttons...
+2025-11-14 03:58:13,455 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 0 potential buttons for selector .CloseButton_Button__I2OMq
+2025-11-14 03:58:13,455 - popup_worker_0 - www.longines.com - INFO - ⚠️ No buttons found in .CloseButton_Button__I2OMq, trying alternative approaches...
+2025-11-14 03:58:13,455 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .builder-image
+2025-11-14 03:58:13,475 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Container .builder-image found and visible, looking for buttons...
+2025-11-14 03:58:13,475 - popup_worker_0 - www.longines.com - INFO - 🔍 Found 0 clickable elements in container .CloseButton_Button__I2OMq
+2025-11-14 03:58:13,475 - popup_worker_0 - www.longines.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .CloseButton_Button__I2OMq via JavaScript
+2025-11-14 03:58:13,483 - popup_worker_0 - www.longines.com - INFO - ✅ Successfully FORCE removed container .CloseButton_Button__I2OMq
+2025-11-14 03:58:13,513 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Found 0 potential buttons for selector .builder-image
+2025-11-14 03:58:13,513 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ No buttons found in .builder-image, trying alternative approaches...
+2025-11-14 03:58:13,518 - popup_worker_0 - www.aloyoga.com - INFO - 🔍 Found 0 clickable elements in container .builder-image
+2025-11-14 03:58:13,518 - popup_worker_0 - www.aloyoga.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .builder-image via JavaScript
+2025-11-14 03:58:13,524 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Successfully FORCE removed container .builder-image
+2025-11-14 03:58:14,016 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-fd3fu1-0
+2025-11-14 03:58:14,030 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-fd3fu1-0 found and visible, looking for buttons...
+2025-11-14 03:58:14,077 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 0 potential buttons for selector .sc-fd3fu1-0
+2025-11-14 03:58:14,077 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ No buttons found in .sc-fd3fu1-0, trying alternative approaches...
+2025-11-14 03:58:14,082 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 Found 0 clickable elements in container .sc-fd3fu1-0
+2025-11-14 03:58:14,082 - popup_worker_0 - www.victoriassecret.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .sc-fd3fu1-0 via JavaScript
+2025-11-14 03:58:14,086 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully FORCE removed container .sc-fd3fu1-0
+2025-11-14 03:58:14,484 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .left-[5px]
+2025-11-14 03:58:14,490 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .Grid_Wrapper__qAxOK
+2025-11-14 03:58:14,503 - popup_worker_0 - www.longines.com - INFO - ✅ Container .Grid_Wrapper__qAxOK found and visible, looking for buttons...
+2025-11-14 03:58:14,525 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .css-11yff89
+2025-11-14 03:58:14,528 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 4 potential buttons for selector .Grid_Wrapper__qAxOK
+2025-11-14 03:58:14,538 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Container .css-11yff89 found and visible, looking for buttons...
+2025-11-14 03:58:14,539 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 1 in .Grid_Wrapper__qAxOK (text: 'no text')
+2025-11-14 03:58:14,576 - popup_worker_0 - www.aloyoga.com - INFO - 🎯 Found 6 potential buttons for selector .css-11yff89
+2025-11-14 03:58:14,587 - popup_worker_0 - www.aloyoga.com - INFO - 🖱️ Clicking accept button 1 in .css-11yff89 (text: 'START HERE')
+2025-11-14 03:58:15,088 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-l2ap1c-0
+2025-11-14 03:58:15,103 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-l2ap1c-0 found and visible, looking for buttons...
+2025-11-14 03:58:15,153 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 0 potential buttons for selector .sc-l2ap1c-0
+2025-11-14 03:58:15,153 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ No buttons found in .sc-l2ap1c-0, trying alternative approaches...
+2025-11-14 03:58:15,161 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 Found 4 clickable elements in container .sc-l2ap1c-0
+2025-11-14 03:58:15,215 - popup_worker_0 - www.victoriassecret.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .sc-l2ap1c-0 via JavaScript
+2025-11-14 03:58:15,219 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully FORCE removed container .sc-l2ap1c-0
+2025-11-14 03:58:16,220 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-fso53m-0
+2025-11-14 03:58:16,236 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-fso53m-0 found and visible, looking for buttons...
+2025-11-14 03:58:16,282 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 0 potential buttons for selector .sc-fso53m-0
+2025-11-14 03:58:16,282 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ No buttons found in .sc-fso53m-0, trying alternative approaches...
+2025-11-14 03:58:16,289 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 Found 1 clickable elements in container .sc-fso53m-0
+2025-11-14 03:58:16,303 - popup_worker_0 - www.victoriassecret.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .sc-fso53m-0 via JavaScript
+2025-11-14 03:58:16,307 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully FORCE removed container .sc-fso53m-0
+2025-11-14 03:58:16,557 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 3 in .Grid_Wrapper__qAxOK (text: 'Accessibility settings')
+2025-11-14 03:58:16,622 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: [class*="cookie"]
+2025-11-14 03:58:16,629 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container [class*="cookie"] not found in DOM, skipping
+2025-11-14 03:58:16,629 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: [id*="cookie"]
+2025-11-14 03:58:16,635 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container [id*="cookie"] not found in DOM, skipping
+2025-11-14 03:58:16,635 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: [class*="consent"]
+2025-11-14 03:58:16,640 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container [class*="consent"] not found in DOM, skipping
+2025-11-14 03:58:16,640 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: [id*="consent"]
+2025-11-14 03:58:16,645 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container [id*="consent"] not found in DOM, skipping
+2025-11-14 03:58:16,645 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: [class*="gdpr"]
+2025-11-14 03:58:16,650 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container [class*="gdpr"] not found in DOM, skipping
+2025-11-14 03:58:16,650 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: [id*="gdpr"]
+2025-11-14 03:58:16,655 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container [id*="gdpr"] not found in DOM, skipping
+2025-11-14 03:58:16,655 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: [class*="cmp"]
+2025-11-14 03:58:16,660 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container [class*="cmp"] not found in DOM, skipping
+2025-11-14 03:58:16,660 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: [id*="cmp"]
+2025-11-14 03:58:16,665 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container [id*="cmp"] not found in DOM, skipping
+2025-11-14 03:58:16,665 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: [data-testid*="cookie"]
+2025-11-14 03:58:16,670 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container [data-testid*="cookie"] not found in DOM, skipping
+2025-11-14 03:58:16,670 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: [data-testid*="consent"]
+2025-11-14 03:58:16,675 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container [data-testid*="consent"] not found in DOM, skipping
+2025-11-14 03:58:16,675 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #usercentrics-root
+2025-11-14 03:58:16,680 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container #usercentrics-root not found in DOM, skipping
+2025-11-14 03:58:16,680 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: #cookiebot
+2025-11-14 03:58:16,684 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container #cookiebot not found in DOM, skipping
+2025-11-14 03:58:16,684 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .fc-consent-root
+2025-11-14 03:58:16,689 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .fc-consent-root not found in DOM, skipping
+2025-11-14 03:58:16,689 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .gdpr-banner
+2025-11-14 03:58:16,694 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .gdpr-banner not found in DOM, skipping
+2025-11-14 03:58:16,694 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .cookie-banner
+2025-11-14 03:58:16,699 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .cookie-banner not found in DOM, skipping
+2025-11-14 03:58:16,699 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .consent-banner
+2025-11-14 03:58:16,703 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .consent-banner not found in DOM, skipping
+2025-11-14 03:58:16,704 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: [class*="privacy"]
+2025-11-14 03:58:16,709 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container [class*="privacy"] not found in DOM, skipping
+2025-11-14 03:58:16,709 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: [id*="privacy"]
+2025-11-14 03:58:16,714 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container [id*="privacy"] not found in DOM, skipping
+2025-11-14 03:58:16,714 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: [class*="accept-all"]
+2025-11-14 03:58:16,719 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container [class*="accept-all"] not found in DOM, skipping
+2025-11-14 03:58:16,719 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: [id*="accept-all"]
+2025-11-14 03:58:16,724 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container [id*="accept-all"] not found in DOM, skipping
+2025-11-14 03:58:16,724 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .cookie-accept-all
+2025-11-14 03:58:16,728 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .cookie-accept-all not found in DOM, skipping
+2025-11-14 03:58:16,729 - popup_worker_0 - www.aloyoga.com - INFO - 🔎 Checking selector: .privacy-accept-all
+2025-11-14 03:58:16,734 - popup_worker_0 - www.aloyoga.com - INFO - ⚠️ Container .privacy-accept-all not found in DOM, skipping
+2025-11-14 03:58:17,308 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-1do5g90-3
+2025-11-14 03:58:17,323 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-1do5g90-3 found and visible, looking for buttons...
+2025-11-14 03:58:17,370 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 1 potential buttons for selector .sc-1do5g90-3
+2025-11-14 03:58:17,380 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 1 in .sc-1do5g90-3 (text: 'Ready to get rewarded?')
+2025-11-14 03:58:18,572 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 4 in .Grid_Wrapper__qAxOK (text: 'Cookies settings')
+2025-11-14 03:58:19,383 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .slick-slide
+2025-11-14 03:58:19,405 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .slick-slide found and visible, looking for buttons...
+2025-11-14 03:58:19,473 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 4 potential buttons for selector .slick-slide
+2025-11-14 03:58:19,498 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 1 in .slick-slide (text: 'Details')
+2025-11-14 03:58:20,575 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .MenuLevel1_Wrapper__qckeV
+2025-11-14 03:58:20,588 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .MenuLevel1_Wrapper__qckeV not found in DOM, skipping
+2025-11-14 03:58:20,588 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .swiper
+2025-11-14 03:58:20,601 - popup_worker_0 - www.longines.com - INFO - ✅ Container .swiper found and visible, looking for buttons...
+2025-11-14 03:58:20,629 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 0 potential buttons for selector .swiper
+2025-11-14 03:58:20,629 - popup_worker_0 - www.longines.com - INFO - ⚠️ No buttons found in .swiper, trying alternative approaches...
+2025-11-14 03:58:20,635 - popup_worker_0 - www.longines.com - INFO - 🔍 Found 0 clickable elements in container .swiper
+2025-11-14 03:58:20,635 - popup_worker_0 - www.longines.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .swiper via JavaScript
+2025-11-14 03:58:20,640 - popup_worker_0 - www.longines.com - INFO - ✅ Successfully FORCE removed container .swiper
+2025-11-14 03:58:21,511 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 2 in .slick-slide (text: 'VIEW OFFERS')
+2025-11-14 03:58:21,601 - popup_worker_0 - www.aloyoga.com - INFO - 🎭 Removing overlay elements using general techniques
+2025-11-14 03:58:21,641 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: #swiper-wrapper-37e3d63f2b493ceb
+2025-11-14 03:58:21,654 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container #swiper-wrapper-37e3d63f2b493ceb not found in DOM, skipping
+2025-11-14 03:58:21,654 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .swiper-slide
+2025-11-14 03:58:21,669 - popup_worker_0 - www.longines.com - INFO - ✅ Container .swiper-slide found and visible, looking for buttons...
+2025-11-14 03:58:21,696 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 0 potential buttons for selector .swiper-slide
+2025-11-14 03:58:21,696 - popup_worker_0 - www.longines.com - INFO - ⚠️ No buttons found in .swiper-slide, trying alternative approaches...
+2025-11-14 03:58:21,708 - popup_worker_0 - www.longines.com - INFO - 🔍 Found 10 clickable elements in container .swiper-slide
+2025-11-14 03:58:21,885 - popup_worker_0 - www.longines.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .swiper-slide via JavaScript
+2025-11-14 03:58:21,889 - popup_worker_0 - www.longines.com - INFO - ✅ Successfully FORCE removed container .swiper-slide
+2025-11-14 03:58:22,232 - popup_worker_0 - www.aloyoga.com - INFO - 🍪 Cookie consent popup handling completed (no buttons found or clicked)
+2025-11-14 03:58:22,890 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .Menu2_mobile_HeaderWrapper__0y5DK
+2025-11-14 03:58:22,897 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .Menu2_mobile_HeaderWrapper__0y5DK not found in DOM, skipping
+2025-11-14 03:58:22,897 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .HomepageSliderControls_ContentWrapper__Q37RE
+2025-11-14 03:58:22,902 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .HomepageSliderControls_ContentWrapper__Q37RE not found in DOM, skipping
+2025-11-14 03:58:22,902 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: #swiper-wrapper-b40622ee384f45dd
+2025-11-14 03:58:22,907 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container #swiper-wrapper-b40622ee384f45dd not found in DOM, skipping
+2025-11-14 03:58:22,907 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: #swiper-wrapper-41f1d377a0bcbb68
+2025-11-14 03:58:22,911 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container #swiper-wrapper-41f1d377a0bcbb68 not found in DOM, skipping
+2025-11-14 03:58:22,911 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: #swiper-wrapper-9a677e22c91c26e2
+2025-11-14 03:58:22,915 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container #swiper-wrapper-9a677e22c91c26e2 not found in DOM, skipping
+2025-11-14 03:58:22,915 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: #swiper-wrapper-d7ee3ed824ec9922
+2025-11-14 03:58:22,920 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container #swiper-wrapper-d7ee3ed824ec9922 not found in DOM, skipping
+2025-11-14 03:58:22,920 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .MuiDrawer-root
+2025-11-14 03:58:22,924 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .MuiDrawer-root not found in DOM, skipping
+2025-11-14 03:58:22,924 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .MuiBackdrop-root
+2025-11-14 03:58:22,929 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .MuiBackdrop-root not found in DOM, skipping
+2025-11-14 03:58:22,929 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .MuiPaper-root
+2025-11-14 03:58:22,933 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .MuiPaper-root not found in DOM, skipping
+2025-11-14 03:58:22,933 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .Picture_Picture__YOVSZ
+2025-11-14 03:58:22,938 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .Picture_Picture__YOVSZ not found in DOM, skipping
+2025-11-14 03:58:22,938 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .HomepageSliderItem_Paragraph__mzyZo
+2025-11-14 03:58:22,942 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .HomepageSliderItem_Paragraph__mzyZo not found in DOM, skipping
+2025-11-14 03:58:22,942 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .absolute
+2025-11-14 03:58:22,954 - popup_worker_0 - www.longines.com - INFO - ✅ Container .absolute found and visible, looking for buttons...
+2025-11-14 03:58:22,983 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 2 potential buttons for selector .absolute
+2025-11-14 03:58:22,994 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 1 in .absolute (text: 'no text')
+2025-11-14 03:58:23,523 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 3 in .slick-slide (text: 'Details')
+2025-11-14 03:58:24,088 - popup_worker_0 - www.aloyoga.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_after_cookie_consent.png
+2025-11-14 03:58:25,006 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .Image_Image__7E39c
+2025-11-14 03:58:25,022 - popup_worker_0 - www.longines.com - INFO - ✅ Container .Image_Image__7E39c found and visible, looking for buttons...
+2025-11-14 03:58:25,049 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 0 potential buttons for selector .Image_Image__7E39c
+2025-11-14 03:58:25,049 - popup_worker_0 - www.longines.com - INFO - ⚠️ No buttons found in .Image_Image__7E39c, trying alternative approaches...
+2025-11-14 03:58:25,056 - popup_worker_0 - www.longines.com - INFO - 🔍 Found 0 clickable elements in container .Image_Image__7E39c
+2025-11-14 03:58:25,057 - popup_worker_0 - www.longines.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .Image_Image__7E39c via JavaScript
+2025-11-14 03:58:25,060 - popup_worker_0 - www.longines.com - INFO - ✅ Successfully FORCE removed container .Image_Image__7E39c
+2025-11-14 03:58:25,089 - popup_worker_0 - www.aloyoga.com - INFO - 🧹 Running aggressive OneTrust cleanup to ensure complete removal...
+2025-11-14 03:58:25,102 - popup_worker_0 - www.aloyoga.com - INFO - 🗑️ Aggressive cleanup removed 2 OneTrust/cookie banner elements
+2025-11-14 03:58:25,536 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 4 in .slick-slide (text: 'VIEW OFFERS')
+2025-11-14 03:58:25,609 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Cookie banner verification: No visible banners found
+2025-11-14 03:58:26,062 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .z-10
+2025-11-14 03:58:26,076 - popup_worker_0 - www.longines.com - INFO - ✅ Container .z-10 found and visible, looking for buttons...
+2025-11-14 03:58:26,106 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 0 potential buttons for selector .z-10
+2025-11-14 03:58:26,106 - popup_worker_0 - www.longines.com - INFO - ⚠️ No buttons found in .z-10, trying alternative approaches...
+2025-11-14 03:58:26,118 - popup_worker_0 - www.longines.com - INFO - 🔍 Found 0 clickable elements in container .z-10
+2025-11-14 03:58:26,118 - popup_worker_0 - www.longines.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .z-10 via JavaScript
+2025-11-14 03:58:26,122 - popup_worker_0 - www.longines.com - INFO - ✅ Successfully FORCE removed container .z-10
+2025-11-14 03:58:26,940 - popup_worker_0 - www.aloyoga.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_after_aggressive_cleanup.png
+2025-11-14 03:58:27,123 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: [class*="cookie"]
+2025-11-14 03:58:27,130 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container [class*="cookie"] not found in DOM, skipping
+2025-11-14 03:58:27,130 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: [id*="cookie"]
+2025-11-14 03:58:27,135 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container [id*="cookie"] not found in DOM, skipping
+2025-11-14 03:58:27,135 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: [class*="consent"]
+2025-11-14 03:58:27,140 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container [class*="consent"] not found in DOM, skipping
+2025-11-14 03:58:27,141 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: [id*="consent"]
+2025-11-14 03:58:27,152 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container [id*="consent"] exists but not visible, trying to remove anyway...
+2025-11-14 03:58:27,156 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: [class*="gdpr"]
+2025-11-14 03:58:27,172 - popup_worker_0 - www.longines.com - INFO - ✅ Container [class*="gdpr"] found and visible, looking for buttons...
+2025-11-14 03:58:27,195 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 5 potential buttons for selector [class*="gdpr"]
+2025-11-14 03:58:27,207 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 1 in [class*="gdpr"] (text: 'no text')
+2025-11-14 03:58:27,241 - popup_worker_0 - www.aloyoga.com - INFO - 📌 Step 3: Clicking basic close buttons
+2025-11-14 03:58:27,241 - popup_worker_0 - www.aloyoga.com - INFO - 🔘 Clicking basic close buttons
+2025-11-14 03:58:27,538 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-1nurqct-0
+2025-11-14 03:58:27,551 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-1nurqct-0 found and visible, looking for buttons...
+2025-11-14 03:58:27,599 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 0 potential buttons for selector .sc-1nurqct-0
+2025-11-14 03:58:27,599 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ No buttons found in .sc-1nurqct-0, trying alternative approaches...
+2025-11-14 03:58:27,605 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 Found 0 clickable elements in container .sc-1nurqct-0
+2025-11-14 03:58:27,605 - popup_worker_0 - www.victoriassecret.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .sc-1nurqct-0 via JavaScript
+2025-11-14 03:58:27,609 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully FORCE removed container .sc-1nurqct-0
+2025-11-14 03:58:27,625 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Successfully clicked basic close button: button[class*="close"]
+2025-11-14 03:58:27,661 - popup_worker_0 - www.aloyoga.com - INFO - 🔘 Basic close button clicking completed (no buttons found or clicked)
+2025-11-14 03:58:27,788 - popup_worker_0 - www.longines.com - INFO - ✅ Successfully clicked accept button in [class*="gdpr"]
+2025-11-14 03:58:27,819 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 2 in [class*="gdpr"] (text: 'To find out more about cookies, please see our Coo')
+2025-11-14 03:58:28,374 - popup_worker_0 - www.longines.com - INFO - ✅ Successfully clicked accept button in [class*="gdpr"]
+2025-11-14 03:58:28,388 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 3 in [class*="gdpr"] (text: 'Settings')
+2025-11-14 03:58:28,610 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-9ej7lb-0
+2025-11-14 03:58:28,626 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-9ej7lb-0 found and visible, looking for buttons...
+2025-11-14 03:58:28,691 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 6 potential buttons for selector .sc-9ej7lb-0
+2025-11-14 03:58:28,699 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 1 in .sc-9ej7lb-0 (text: 'Details')
+2025-11-14 03:58:28,950 - popup_worker_0 - www.longines.com - INFO - ✅ Successfully clicked accept button in [class*="gdpr"]
+2025-11-14 03:58:28,960 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: [id*="gdpr"]
+2025-11-14 03:58:28,965 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container [id*="gdpr"] not found in DOM, skipping
+2025-11-14 03:58:28,965 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: [class*="cmp"]
+2025-11-14 03:58:28,977 - popup_worker_0 - www.longines.com - INFO - ✅ Container [class*="cmp"] found and visible, looking for buttons...
+2025-11-14 03:58:29,006 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 12 potential buttons for selector [class*="cmp"]
+2025-11-14 03:58:29,019 - popup_worker_0 - www.longines.com - INFO - 🖱️ Clicking accept button 1 in [class*="cmp"] (text: 'no text')
+2025-11-14 03:58:29,021 - popup_worker_0 - www.aloyoga.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_after_close_buttons.png
+2025-11-14 03:58:29,222 - popup_worker_0 - www.aloyoga.com - INFO - 📌 Step 4: Final gentle overlay cleanup
+2025-11-14 03:58:29,222 - popup_worker_0 - www.aloyoga.com - INFO - 🧹 Performing conservative overlay cleanup
+2025-11-14 03:58:29,227 - popup_worker_0 - www.aloyoga.com - INFO - 🧹 Conservative overlay cleanup completed - hidden 0 elements
+2025-11-14 03:58:29,573 - popup_worker_0 - www.longines.com - INFO - ✅ Successfully clicked accept button in [class*="cmp"]
+2025-11-14 03:58:29,592 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: [id*="cmp"]
+2025-11-14 03:58:29,603 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container [id*="cmp"] exists but not visible, trying to remove anyway...
+2025-11-14 03:58:29,607 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: [data-testid*="cookie"]
+2025-11-14 03:58:29,611 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container [data-testid*="cookie"] not found in DOM, skipping
+2025-11-14 03:58:29,611 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: [data-testid*="consent"]
+2025-11-14 03:58:29,689 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container [data-testid*="consent"] not found in DOM, skipping
+2025-11-14 03:58:29,689 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: #usercentrics-root
+2025-11-14 03:58:29,694 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container #usercentrics-root not found in DOM, skipping
+2025-11-14 03:58:29,694 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: #cookiebot
+2025-11-14 03:58:29,703 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container #cookiebot not found in DOM, skipping
+2025-11-14 03:58:29,703 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .fc-consent-root
+2025-11-14 03:58:29,707 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .fc-consent-root not found in DOM, skipping
+2025-11-14 03:58:29,707 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .gdpr-banner
+2025-11-14 03:58:29,712 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .gdpr-banner not found in DOM, skipping
+2025-11-14 03:58:29,712 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .cookie-banner
+2025-11-14 03:58:29,719 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .cookie-banner not found in DOM, skipping
+2025-11-14 03:58:29,719 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .consent-banner
+2025-11-14 03:58:29,724 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .consent-banner not found in DOM, skipping
+2025-11-14 03:58:29,724 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: [class*="privacy"]
+2025-11-14 03:58:29,740 - popup_worker_0 - www.longines.com - INFO - ✅ Container [class*="privacy"] found and visible, looking for buttons...
+2025-11-14 03:58:29,766 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 0 potential buttons for selector [class*="privacy"]
+2025-11-14 03:58:29,766 - popup_worker_0 - www.longines.com - INFO - ⚠️ No buttons found in [class*="privacy"], trying alternative approaches...
+2025-11-14 03:58:29,774 - popup_worker_0 - www.longines.com - INFO - 🔍 Found 0 clickable elements in container [class*="privacy"]
+2025-11-14 03:58:29,774 - popup_worker_0 - www.longines.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container [class*="privacy"] via JavaScript
+2025-11-14 03:58:29,780 - popup_worker_0 - www.longines.com - WARNING - ⚠️ Failed to remove container [class*="privacy"], will try next selector
+2025-11-14 03:58:30,280 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: [id*="privacy"]
+2025-11-14 03:58:30,293 - popup_worker_0 - www.longines.com - INFO - ✅ Container [id*="privacy"] found and visible, looking for buttons...
+2025-11-14 03:58:30,323 - popup_worker_0 - www.longines.com - INFO - 🎯 Found 0 potential buttons for selector [id*="privacy"]
+2025-11-14 03:58:30,323 - popup_worker_0 - www.longines.com - INFO - ⚠️ No buttons found in [id*="privacy"], trying alternative approaches...
+2025-11-14 03:58:30,335 - popup_worker_0 - www.longines.com - INFO - 🔍 Found 0 clickable elements in container [id*="privacy"]
+2025-11-14 03:58:30,335 - popup_worker_0 - www.longines.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container [id*="privacy"] via JavaScript
+2025-11-14 03:58:30,340 - popup_worker_0 - www.longines.com - WARNING - ⚠️ Failed to remove container [id*="privacy"], will try next selector
+2025-11-14 03:58:30,603 - popup_worker_0 - www.aloyoga.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_after_final_cleanup.png
+2025-11-14 03:58:30,717 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 2 in .sc-9ej7lb-0 (text: 'Details')
+2025-11-14 03:58:30,841 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: [class*="accept-all"]
+2025-11-14 03:58:30,847 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container [class*="accept-all"] not found in DOM, skipping
+2025-11-14 03:58:30,847 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: [id*="accept-all"]
+2025-11-14 03:58:30,852 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container [id*="accept-all"] not found in DOM, skipping
+2025-11-14 03:58:30,852 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .cookie-accept-all
+2025-11-14 03:58:30,857 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .cookie-accept-all not found in DOM, skipping
+2025-11-14 03:58:30,857 - popup_worker_0 - www.longines.com - INFO - 🔎 Checking selector: .privacy-accept-all
+2025-11-14 03:58:30,861 - popup_worker_0 - www.longines.com - INFO - ⚠️ Container .privacy-accept-all not found in DOM, skipping
+2025-11-14 03:58:31,104 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Conservative popup handling completed
+2025-11-14 03:58:31,104 - popup_worker_0 - www.aloyoga.com - INFO - ✅ Popup handling completed
+2025-11-14 03:58:32,393 - popup_worker_0 - www.aloyoga.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_popup_end.png
+2025-11-14 03:58:32,733 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 3 in .sc-9ej7lb-0 (text: 'no text')
+2025-11-14 03:58:34,508 - src.scraper - www.aloyoga.com - INFO - 📊 Progress: 1/1 directories completed (1 screenshots, 1 HTML files)
+2025-11-14 03:58:34,515 - src.scraper - www.aloyoga.com - INFO - ✅ TRUE parallel scraping completed: 1 directories processed across 3 independent processes
+2025-11-14 03:58:34,515 - src.scraper - www.aloyoga.com - INFO - 📈 Final stats: 1 screenshots, 1 HTML files, 0 errors
+2025-11-14 03:58:34,749 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 5 in .sc-9ej7lb-0 (text: 'no text')
+2025-11-14 03:58:36,417 - popup_worker_0 - www.longines.com - INFO - 🎭 Removing overlay elements using general techniques
+2025-11-14 03:58:36,752 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-196dw0h-0
+2025-11-14 03:58:36,768 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-196dw0h-0 found and visible, looking for buttons...
+2025-11-14 03:58:36,833 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 0 potential buttons for selector .sc-196dw0h-0
+2025-11-14 03:58:36,833 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ No buttons found in .sc-196dw0h-0, trying alternative approaches...
+2025-11-14 03:58:36,839 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 Found 0 clickable elements in container .sc-196dw0h-0
+2025-11-14 03:58:36,839 - popup_worker_0 - www.victoriassecret.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .sc-196dw0h-0 via JavaScript
+2025-11-14 03:58:36,844 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully FORCE removed container .sc-196dw0h-0
+2025-11-14 03:58:37,060 - popup_worker_0 - www.longines.com - INFO - 🍪 Cookie consent popup handling completed (no buttons found or clicked)
+2025-11-14 03:58:37,845 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-1b9mm2x-0
+2025-11-14 03:58:37,861 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-1b9mm2x-0 found and visible, looking for buttons...
+2025-11-14 03:58:37,937 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 0 potential buttons for selector .sc-1b9mm2x-0
+2025-11-14 03:58:37,938 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ No buttons found in .sc-1b9mm2x-0, trying alternative approaches...
+2025-11-14 03:58:37,948 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 Found 0 clickable elements in container .sc-1b9mm2x-0
+2025-11-14 03:58:37,948 - popup_worker_0 - www.victoriassecret.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .sc-1b9mm2x-0 via JavaScript
+2025-11-14 03:58:37,954 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully FORCE removed container .sc-1b9mm2x-0
+2025-11-14 03:58:38,956 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-19t31kp-1
+2025-11-14 03:58:38,973 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-19t31kp-1 found and visible, looking for buttons...
+2025-11-14 03:58:39,033 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 0 potential buttons for selector .sc-19t31kp-1
+2025-11-14 03:58:39,033 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ No buttons found in .sc-19t31kp-1, trying alternative approaches...
+2025-11-14 03:58:39,039 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 Found 0 clickable elements in container .sc-19t31kp-1
+2025-11-14 03:58:39,039 - popup_worker_0 - www.victoriassecret.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .sc-19t31kp-1 via JavaScript
+2025-11-14 03:58:39,043 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully FORCE removed container .sc-19t31kp-1
+2025-11-14 03:58:40,045 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-761wk4-0
+2025-11-14 03:58:40,058 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-761wk4-0 found and visible, looking for buttons...
+2025-11-14 03:58:40,118 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 0 potential buttons for selector .sc-761wk4-0
+2025-11-14 03:58:40,118 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ No buttons found in .sc-761wk4-0, trying alternative approaches...
+2025-11-14 03:58:40,123 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 Found 0 clickable elements in container .sc-761wk4-0
+2025-11-14 03:58:40,123 - popup_worker_0 - www.victoriassecret.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .sc-761wk4-0 via JavaScript
+2025-11-14 03:58:40,128 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully FORCE removed container .sc-761wk4-0
+2025-11-14 03:58:40,238 - popup_worker_0 - www.longines.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_after_cookie_consent.png
+2025-11-14 03:58:41,129 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: #close-pc-btn-handler
+2025-11-14 03:58:41,138 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container #close-pc-btn-handler not found in DOM, skipping
+2025-11-14 03:58:41,139 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .ot-tgl
+2025-11-14 03:58:41,145 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container .ot-tgl not found in DOM, skipping
+2025-11-14 03:58:41,145 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: #chkbox-id
+2025-11-14 03:58:41,151 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container #chkbox-id not found in DOM, skipping
+2025-11-14 03:58:41,151 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .ot-sel-all-chkbox
+2025-11-14 03:58:41,157 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container .ot-sel-all-chkbox not found in DOM, skipping
+2025-11-14 03:58:41,157 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-1lzvqrf-6
+2025-11-14 03:58:41,172 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-1lzvqrf-6 found and visible, looking for buttons...
+2025-11-14 03:58:41,234 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 1 potential buttons for selector .sc-1lzvqrf-6
+2025-11-14 03:58:41,239 - popup_worker_0 - www.longines.com - INFO - 🧹 Running aggressive OneTrust cleanup to ensure complete removal...
+2025-11-14 03:58:41,243 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 1 in .sc-1lzvqrf-6 (text: 'Stocking Stuffers')
+2025-11-14 03:58:41,245 - popup_worker_0 - www.longines.com - INFO - 🗑️ Aggressive cleanup removed 0 OneTrust/cookie banner elements
+2025-11-14 03:58:41,754 - popup_worker_0 - www.longines.com - INFO - ✅ Cookie banner verification: No visible banners found
+2025-11-14 03:58:42,001 - popup_worker_0 - www.longines.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_after_aggressive_cleanup.png
+2025-11-14 03:58:42,302 - popup_worker_0 - www.longines.com - INFO - 📌 Step 3: Clicking basic close buttons
+2025-11-14 03:58:42,302 - popup_worker_0 - www.longines.com - INFO - 🔘 Clicking basic close buttons
+2025-11-14 03:58:42,332 - popup_worker_0 - www.longines.com - INFO - 🔘 Basic close button clicking completed (no buttons found or clicked)
+2025-11-14 03:58:42,585 - popup_worker_0 - www.longines.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_after_close_buttons.png
+2025-11-14 03:58:42,785 - popup_worker_0 - www.longines.com - INFO - 📌 Step 4: Final gentle overlay cleanup
+2025-11-14 03:58:42,785 - popup_worker_0 - www.longines.com - INFO - 🧹 Performing conservative overlay cleanup
+2025-11-14 03:58:42,790 - popup_worker_0 - www.longines.com - INFO - 🧹 Conservative overlay cleanup completed - hidden 0 elements
+2025-11-14 03:58:43,041 - popup_worker_0 - www.longines.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_after_final_cleanup.png
+2025-11-14 03:58:43,246 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-swrtnk-0
+2025-11-14 03:58:43,261 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-swrtnk-0 found and visible, looking for buttons...
+2025-11-14 03:58:43,326 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 1 potential buttons for selector .sc-swrtnk-0
+2025-11-14 03:58:43,335 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 1 in .sc-swrtnk-0 (text: 'Details')
+2025-11-14 03:58:43,541 - popup_worker_0 - www.longines.com - INFO - ✅ Conservative popup handling completed
+2025-11-14 03:58:43,541 - popup_worker_0 - www.longines.com - INFO - ✅ Popup handling completed
+2025-11-14 03:58:43,782 - popup_worker_0 - www.longines.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_popup_end.png
+2025-11-14 03:58:44,752 - src.scraper - www.longines.com - INFO - 📊 Progress: 1/1 directories completed (1 screenshots, 1 HTML files)
+2025-11-14 03:58:44,759 - src.scraper - www.longines.com - INFO - ✅ TRUE parallel scraping completed: 1 directories processed across 3 independent processes
+2025-11-14 03:58:44,759 - src.scraper - www.longines.com - INFO - 📈 Final stats: 1 screenshots, 1 HTML files, 0 errors
+2025-11-14 03:58:45,337 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-1916wqc-0
+2025-11-14 03:58:45,355 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-1916wqc-0 found and visible, looking for buttons...
+2025-11-14 03:58:45,419 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 2 potential buttons for selector .sc-1916wqc-0
+2025-11-14 03:58:45,427 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 1 in .sc-1916wqc-0 (text: 'Details')
+2025-11-14 03:58:47,441 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 2 in .sc-1916wqc-0 (text: 'Details')
+2025-11-14 03:58:49,443 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-mih600-0
+2025-11-14 03:58:49,458 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-mih600-0 found and visible, looking for buttons...
+2025-11-14 03:58:49,519 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 1 potential buttons for selector .sc-mih600-0
+2025-11-14 03:58:49,528 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 1 in .sc-mih600-0 (text: 'no text')
+2025-11-14 03:58:51,530 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .sc-wjj5hq-1
+2025-11-14 03:58:51,544 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .sc-wjj5hq-1 found and visible, looking for buttons...
+2025-11-14 03:58:51,605 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 0 potential buttons for selector .sc-wjj5hq-1
+2025-11-14 03:58:51,605 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ No buttons found in .sc-wjj5hq-1, trying alternative approaches...
+2025-11-14 03:58:51,611 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 Found 0 clickable elements in container .sc-wjj5hq-1
+2025-11-14 03:58:51,611 - popup_worker_0 - www.victoriassecret.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .sc-wjj5hq-1 via JavaScript
+2025-11-14 03:58:51,615 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully FORCE removed container .sc-wjj5hq-1
+2025-11-14 03:58:52,616 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .product-feed-carousel-arrows
+2025-11-14 03:58:52,629 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .product-feed-carousel-arrows found and visible, looking for buttons...
+2025-11-14 03:58:52,691 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 2 potential buttons for selector .product-feed-carousel-arrows
+2025-11-14 03:58:52,704 - popup_worker_0 - www.victoriassecret.com - INFO - 🖱️ Clicking accept button 2 in .product-feed-carousel-arrows (text: 'no text')
+2025-11-14 03:58:54,706 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .product-card-link
+2025-11-14 03:58:54,724 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .product-card-link found and visible, looking for buttons...
+2025-11-14 03:58:54,784 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 0 potential buttons for selector .product-card-link
+2025-11-14 03:58:54,784 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ No buttons found in .product-card-link, trying alternative approaches...
+2025-11-14 03:58:54,789 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 Found 0 clickable elements in container .product-card-link
+2025-11-14 03:58:54,789 - popup_worker_0 - www.victoriassecret.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .product-card-link via JavaScript
+2025-11-14 03:58:54,793 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully FORCE removed container .product-card-link
+2025-11-14 03:58:55,794 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .product-card-image
+2025-11-14 03:58:55,808 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Container .product-card-image found and visible, looking for buttons...
+2025-11-14 03:58:55,868 - popup_worker_0 - www.victoriassecret.com - INFO - 🎯 Found 0 potential buttons for selector .product-card-image
+2025-11-14 03:58:55,868 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ No buttons found in .product-card-image, trying alternative approaches...
+2025-11-14 03:58:55,874 - popup_worker_0 - www.victoriassecret.com - INFO - 🔍 Found 0 clickable elements in container .product-card-image
+2025-11-14 03:58:55,874 - popup_worker_0 - www.victoriassecret.com - INFO - 🗑️ No acceptable buttons found, FORCE removing container .product-card-image via JavaScript
+2025-11-14 03:58:55,878 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Successfully FORCE removed container .product-card-image
+2025-11-14 03:58:56,880 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [class*="cookie"]
+2025-11-14 03:58:56,889 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [class*="cookie"] not found in DOM, skipping
+2025-11-14 03:58:56,889 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [id*="cookie"]
+2025-11-14 03:58:56,896 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [id*="cookie"] not found in DOM, skipping
+2025-11-14 03:58:56,896 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [class*="consent"]
+2025-11-14 03:58:56,903 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [class*="consent"] not found in DOM, skipping
+2025-11-14 03:58:56,903 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [id*="consent"]
+2025-11-14 03:58:56,909 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [id*="consent"] not found in DOM, skipping
+2025-11-14 03:58:56,909 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [class*="gdpr"]
+2025-11-14 03:58:56,915 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [class*="gdpr"] not found in DOM, skipping
+2025-11-14 03:58:56,915 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [id*="gdpr"]
+2025-11-14 03:58:56,924 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [id*="gdpr"] not found in DOM, skipping
+2025-11-14 03:58:56,924 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [class*="cmp"]
+2025-11-14 03:58:56,930 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [class*="cmp"] not found in DOM, skipping
+2025-11-14 03:58:56,930 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [id*="cmp"]
+2025-11-14 03:58:56,936 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [id*="cmp"] not found in DOM, skipping
+2025-11-14 03:58:56,936 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [data-testid*="cookie"]
+2025-11-14 03:58:56,943 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [data-testid*="cookie"] not found in DOM, skipping
+2025-11-14 03:58:56,943 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [data-testid*="consent"]
+2025-11-14 03:58:56,949 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [data-testid*="consent"] not found in DOM, skipping
+2025-11-14 03:58:56,949 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: #usercentrics-root
+2025-11-14 03:58:56,956 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container #usercentrics-root not found in DOM, skipping
+2025-11-14 03:58:56,957 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: #cookiebot
+2025-11-14 03:58:56,962 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container #cookiebot not found in DOM, skipping
+2025-11-14 03:58:56,962 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .fc-consent-root
+2025-11-14 03:58:56,968 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container .fc-consent-root not found in DOM, skipping
+2025-11-14 03:58:56,968 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .gdpr-banner
+2025-11-14 03:58:56,974 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container .gdpr-banner not found in DOM, skipping
+2025-11-14 03:58:56,974 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .cookie-banner
+2025-11-14 03:58:56,979 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container .cookie-banner not found in DOM, skipping
+2025-11-14 03:58:56,979 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .consent-banner
+2025-11-14 03:58:56,987 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container .consent-banner not found in DOM, skipping
+2025-11-14 03:58:56,987 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [class*="privacy"]
+2025-11-14 03:58:56,994 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [class*="privacy"] not found in DOM, skipping
+2025-11-14 03:58:56,994 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [id*="privacy"]
+2025-11-14 03:58:57,000 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [id*="privacy"] not found in DOM, skipping
+2025-11-14 03:58:57,000 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [class*="accept-all"]
+2025-11-14 03:58:57,006 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [class*="accept-all"] not found in DOM, skipping
+2025-11-14 03:58:57,006 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: [id*="accept-all"]
+2025-11-14 03:58:57,012 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container [id*="accept-all"] not found in DOM, skipping
+2025-11-14 03:58:57,012 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .cookie-accept-all
+2025-11-14 03:58:57,020 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container .cookie-accept-all not found in DOM, skipping
+2025-11-14 03:58:57,020 - popup_worker_0 - www.victoriassecret.com - INFO - 🔎 Checking selector: .privacy-accept-all
+2025-11-14 03:58:57,025 - popup_worker_0 - www.victoriassecret.com - INFO - ⚠️ Container .privacy-accept-all not found in DOM, skipping
+2025-11-14 03:59:02,798 - popup_worker_0 - www.victoriassecret.com - INFO - 🎭 Removing overlay elements using general techniques
+2025-11-14 03:59:03,426 - popup_worker_0 - www.victoriassecret.com - INFO - 🍪 Cookie consent popup handling completed (no buttons found or clicked)
+2025-11-14 03:59:06,045 - popup_worker_0 - www.victoriassecret.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_after_cookie_consent.png
+2025-11-14 03:59:07,046 - popup_worker_0 - www.victoriassecret.com - INFO - 🧹 Running aggressive OneTrust cleanup to ensure complete removal...
+2025-11-14 03:59:07,056 - popup_worker_0 - www.victoriassecret.com - INFO - 🗑️ Aggressive cleanup removed 1 OneTrust/cookie banner elements
+2025-11-14 03:59:07,563 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Cookie banner verification: No visible banners found
+2025-11-14 03:59:08,983 - popup_worker_0 - www.victoriassecret.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_after_aggressive_cleanup.png
+2025-11-14 03:59:09,284 - popup_worker_0 - www.victoriassecret.com - INFO - 📌 Step 3: Clicking basic close buttons
+2025-11-14 03:59:09,284 - popup_worker_0 - www.victoriassecret.com - INFO - 🔘 Clicking basic close buttons
+2025-11-14 03:59:09,332 - popup_worker_0 - www.victoriassecret.com - INFO - 🔘 Basic close button clicking completed (no buttons found or clicked)
+2025-11-14 03:59:10,730 - popup_worker_0 - www.victoriassecret.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_after_close_buttons.png
+2025-11-14 03:59:10,931 - popup_worker_0 - www.victoriassecret.com - INFO - 📌 Step 4: Final gentle overlay cleanup
+2025-11-14 03:59:10,931 - popup_worker_0 - www.victoriassecret.com - INFO - 🧹 Performing conservative overlay cleanup
+2025-11-14 03:59:10,936 - popup_worker_0 - www.victoriassecret.com - INFO - 🧹 Conservative overlay cleanup completed - hidden 0 elements
+2025-11-14 03:59:12,928 - popup_worker_0 - www.victoriassecret.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_after_final_cleanup.png
+2025-11-14 03:59:13,429 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Conservative popup handling completed
+2025-11-14 03:59:13,429 - popup_worker_0 - www.victoriassecret.com - INFO - ✅ Popup handling completed
+2025-11-14 03:59:14,857 - popup_worker_0 - www.victoriassecret.com - INFO - 📸 Debug screenshot taken: popup_debug_screenshots/popup_debug_popup_end.png
+2025-11-14 03:59:17,435 - src.scraper - www.victoriassecret.com - INFO - 📊 Progress: 1/1 directories completed (1 screenshots, 1 HTML files)
+2025-11-14 03:59:17,443 - src.scraper - www.victoriassecret.com - INFO - ✅ TRUE parallel scraping completed: 1 directories processed across 3 independent processes
+2025-11-14 03:59:17,443 - src.scraper - www.victoriassecret.com - INFO - 📈 Final stats: 1 screenshots, 1 HTML files, 0 errors
+2025-11-14 03:59:17 - web_crawler - INFO - Crawling process completed successfully
+
+============================================================
+WEB CRAWLER SUMMARY
+============================================================
+Total execution time: 110.80 seconds
+Websites processed: 3
+Successful: 3
+Failed: 0
+Total pages scraped: 3
+Total screenshots taken: 3
+Total HTML files saved: 3
+Total errors encountered: 0
+
+Performance:
+  Pages per second: 0.03
+  Websites per minute: 1.62
+  Avg pages per website: 1.0
+
+============================================================
+2025-11-14 03:59:17 - web_crawler - INFO - Web crawler application completed
